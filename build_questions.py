@@ -1,0 +1,518 @@
+# -*- coding: utf-8 -*-
+"""
+Constrói data/questions.json a partir das questões extraídas dos PDFs
+(QUESTÕES_SOBRE_*.pdf) com gabaritos resolvidos e validados contra:
+  1) Os dois simulados já realizados (Lucas / Jair) - questões que se repetem
+     tiveram o gabarito confirmado por resultado real.
+  2) Lei 11.795/2008 (Lei do Consórcio) - consultada via busca na web em
+     07/07/2026 para os pontos sem confirmação cruzada.
+  3) GLOSSÁRIO_DO_CONSÓRCIO.pdf - para as explicações conceituais.
+
+Fonte: cada questão tem "fonte_arquivo" apontando pro PDF original em raw/,
+para você conseguir auditar/corrigir qualquer gabarito que discordar.
+"""
+import json
+
+questions = []
+_id = 0
+
+def add(modulo, enunciado, opcoes, gabarito, explicacao, fonte):
+    global _id
+    _id += 1
+    questions.append({
+        "id": _id,
+        "modulo": modulo,
+        "enunciado": enunciado.strip(),
+        "opcoes": {k: v.strip() for k, v in opcoes.items()},
+        "gabarito": gabarito,
+        "explicacao": explicacao.strip(),
+        "fonte_arquivo": fonte,
+        "vezes_respondida": 0,
+        "vezes_correta": 0
+    })
+
+FONTE_ETICA = "QUESTÕES_SOBRE_ÉTICA_E_BOAS_PRATICAS.pdf"
+FONTE_LEG = "QUESTÕES_SOBRE_LEGISLAÇÃO.pdf"
+FONTE_PROC = "QUESTÕES_SOBRE_PROCESSOS.pdf"
+FONTE_CALC = "QUESTÕES_SOBRE_CÁLCULOS.pdf"
+
+# ============================= ÉTICA (10) =============================
+add("etica", "O Vendedor fez uma explanação profunda dos Planos de Consórcio de sua Administradora, foi cuidadoso com sua comunicação, escutou e respondeu as principais dúvidas e objeções do cliente - mas não conseguiu fechar a venda. Isso significa que o vendedor não realizou um bom atendimento?",
+    {"a": "Não. Mas ele não realizou o principal: fechar a venda a todo custo.",
+     "b": "Não. Mesmo com um bom atendimento, a decisão final é do consumidor.",
+     "c": "Sim. Se o atendimento tivesse sido realmente bom, ele teria fechado a venda.",
+     "d": "Sim. Bom atendimento é sinônimo de venda fechada."},
+    "b", "Um bom atendimento não garante o fechamento; a decisão final é sempre do consumidor. Vender 'a todo custo' contraria as boas práticas.", FONTE_ETICA)
+
+add("etica", "Para que o vendedor se comunique de maneira eficiente com o cliente, deve estar atento ao conteúdo do que fala, sua expressão facial, seus gestos e seu tom de voz. No entanto, todos esses cuidados não serão suficientes se ele não for capaz de:",
+    {"a": "Ouvir o cliente.", "b": "Bater as metas.", "c": "Impor-se na negociação.", "d": "Fechar a venda."},
+    "a", "Saber ouvir é a base da comunicação eficiente em vendas; sem isso, os demais cuidados perdem efeito.", FONTE_ETICA)
+
+add("etica", "Cássio busca alternativas para comprar seu primeiro veículo. Seu consultor, dentre as possibilidades, lhe ofertou um consórcio e garantiu que a contemplação pode ser obtida na primeira AGO. Cassio foi:",
+    {"a": "Orientado com informações corretas.", "b": "Mal orientado e pode não ter suas expectativas atendidas.",
+     "c": "Atendido por um profissional que lhe forneceu informações corretas", "d": "Bem orientado."},
+    "b", "Contemplação ocorre por sorteio ou lance; nunca pode ser garantida antecipadamente pelo vendedor.", FONTE_ETICA)
+
+add("etica", "Quando seu cliente tem uma dúvida, a melhor atitude é:",
+    {"a": "Ignorar a pergunta, e focar no que foi compreendido.", "b": "Esclarecer a dúvida, usando argumentos coerentes.",
+     "c": "Ignorar a dúvida e partir para o fechamento da venda.", "d": "Forçar o fechamento da venda."},
+    "b", "Transparência e clareza nas informações são princípios centrais de boas práticas de venda.", FONTE_ETICA)
+
+add("etica", "O profissional de vendas deve ____________ as informações que comunica ao cliente, uma vez que ele é um ___________ interlocutor da Administradora.",
+    {"a": "Confirmar / importante", "b": "Inventar / importante", "c": "Manipular / importante", "d": "Confirmar / irrelevante"},
+    "a", "O vendedor deve sempre confirmar (validar) as informações, pois representa oficialmente a Administradora.", FONTE_ETICA)
+
+add("etica", "Habilidade de valorizar o outro, estudar suas características, cultivar o hábito da empatia, se colocar no lugar do outro entendendo suas crenças, limitações e valores. Estamos falando da habilidade de...",
+    {"a": "Usar a expressão corporal a seu favor.", "b": "Saber se expressar.",
+     "c": "Saber ouvir e compreender o cliente.", "d": "Utilizar técnicas de negociação."},
+    "c", "A descrição corresponde à escuta ativa e empática, um dos maiores desafios da comunicação em vendas.", FONTE_ETICA)
+
+add("etica", "Planejamento financeiro e equilíbrio orçamentário são assuntos associados à(ao):",
+    {"a": "Consumismo.", "b": "Financiamento de bens.", "c": "Dificuldades financeiras.", "d": "Educação financeira."},
+    "d", "Planejamento e equilíbrio orçamentário são pilares da educação financeira, tema relevante na orientação ao consorciado.", FONTE_ETICA)
+
+add("etica", "Segundo o Código de Defesa do Consumidor, é vetado à administradora praticar:",
+    {"a": "Exigir garantia complementar, caso necessário.", "b": "Venda de Consórcios de Diferentes Produtos.",
+     "c": "Venda Casada.", "d": "Proteção ao Cliente."},
+    "c", "Venda casada (condicionar a venda de um produto à compra de outro) é vedada pelo CDC (art. 39, I).", FONTE_ETICA)
+
+add("etica", "O consultor da Administradora X foi negligente com algumas regras em suas vendas e justificou dizendo que 'todo mundo faz dessa mesma forma'. Essa alegação:",
+    {"a": "Rendeu-lhe uma promoção, pois ele alcançou ótimos resultados.",
+     "b": "É aceita, pois não existem processos e medidas que protegem a relação com o cliente.",
+     "c": "Indica que o mercado tem outras práticas e devem pautar o atendimento para proteger a administradora",
+     "d": "Não é aceitável, pois existem processos e medidas que protegem a relação com o cliente."},
+    "d", "Práticas de mercado não justificam negligência; existem normas e processos que protegem consorciado e administradora.", FONTE_ETICA)
+
+add("etica", "Um cliente questiona seu consultor sobre informações de uma suposta má administração dos recursos de seu grupo de consórcio, divulgadas no WhatsApp. O consultor deve informar que:",
+    {"a": "Nem todas as informações que circulam na internet possuem uma fonte confiável, precisam ser validadas.",
+     "b": "Todas as informações que circulam na internet possuem uma fonte confiável, e não precisam ser validadas.",
+     "c": "Nem todas as informações que circulam na internet possuem uma fonte confiável, precisam ser validadas no aplicativo da administradora.",
+     "d": "As informações do WhatsApp são sempre mentirosas, por isso o aplicativo já foi bloqueado algumas vezes"},
+    "a", "Nem toda informação da internet é confiável; deve ser validada (confirmado nos dois simulados reais).", FONTE_ETICA)
+
+# ============================= LEGISLAÇÃO (30) =============================
+add("legislacao", "A participação do Consorciado no Grupo de Consórcio é representada de que forma?",
+    {"a": "Por uma cota, numericamente identificada.", "b": "Pela proposta de adesão, devidamente assinada",
+     "c": "Por uma carta de intenção de compra, numericamente identificada.", "d": "Por um atestado de participação, registrado em cartório."},
+    "a", "A cota é a vaga do consorciado no grupo, com numeração própria (Glossário: 'O que é Cota?').", FONTE_LEG)
+
+add("legislacao", "Você está ajudando o seu gerente a preparar a prestação de contas de um grupo encerrado. Sobre a prestação de contas, é correto afirmar, EXCETO:",
+    {"a": "Os valores pendentes recuperados devem ser rateados proporcionalmente entre os beneficiários.",
+     "b": "Como o grupo já encerrou, cabe ao interessado entrar em contato para verificar se algum valor pendente foi recuperado.",
+     "c": "Deve informar os valores pendentes de recebimento, objeto de cobrança judicial.",
+     "d": "Deve informar as disponibilidades remanescentes dos respectivos consorciados e participantes excluídos."},
+    "a", "Valores recuperados pertencem individualmente a cada consorciado/excluído com direito, não são rateados entre 'beneficiários'.", FONTE_LEG)
+
+add("legislacao", "Qual consorciado NÃO pode ser excluído do grupo?",
+    {"a": "Consorciado Inadimplente.", "b": "Consorciado Adimplente.", "c": "Consorciado Contemplado.", "d": "Qualquer Consorciado pode ser excluído."},
+    "c", "O contemplado já usou o crédito e está vinculado por alienação fiduciária/garantia, permanecendo responsável até a quitação — não é excluído por inadimplência da mesma forma que um não contemplado.", FONTE_LEG)
+
+add("legislacao", "A Assembleia Geral Ordinária (AGO) destina-se à apreciação de contas prestadas pela Administradora e a realização de contemplações. Por conta disso ela deve ser realizada:",
+    {"a": "Obrigatoriamente a cada 6 meses, pelo menos.", "b": "Na periodicidade prevista no contrato/proposta de adesão.",
+     "c": "Mensalmente, ou sempre que houver fundos para contemplação por sorteio.", "d": "Por vontade da Administradora, sempre que desejar prestar contas."},
+    "b", "Art. 18 da Lei 11.795/08: a AGO é realizada na periodicidade prevista em contrato.", FONTE_LEG)
+
+add("legislacao", "João quer saber mais detalhes sobre a contemplação. Você pode dar as seguintes informações, EXCETO:",
+    {"a": "Concorrerá à contemplação o consorciado ativo.", "b": "Em nenhuma hipótese os excluídos podem participar.",
+     "c": "Ocorre por meio de sorteio ou de lance.", "d": "Atribui ao consorciado o crédito para a aquisição de bem ou serviço."},
+    "b", "Os excluídos concorrem à restituição de valores por sorteio (Art. 22, §2º da Lei), então 'em nenhuma hipótese' é falso.", FONTE_LEG)
+
+add("legislacao", "O que significa dizer que Patrimônio da Administradora, ou seja, seus recursos financeiros, são independentes do Grupo?",
+    {"a": "Significa que a situação financeira da Administradora não impacta de forma alguma na sua capacidade de operação.",
+     "b": "Significa que os recursos financeiros do Grupo não irão socorrer a Administradora - mas essa, por ter recursos separados, sempre poderá ajudá-los financeiramente.",
+     "c": "Significa que os recursos financeiros do Grupo não se misturam com os da Administradora, e vice versa.",
+     "d": "Significa que os recursos financeiros da Administradora não são formados pelos recursos de um Grupo, mas pelo conjunto deles."},
+    "c", "Art. 3º, §5º: o grupo é autônomo e possui patrimônio próprio, que não se confunde com o da administradora.", FONTE_LEG)
+
+add("legislacao", "A Assembleia Geral Extraordinária (AGE) será convocada:",
+    {"a": "Na periodicidade prevista no contrato de adesão.", "b": "Por vontade da Administradora ou 30% do total de Consorciados do grupo.",
+     "c": "Obrigatoriamente a cada 6 meses.", "d": "Pela Administradora por iniciativa própria ou por solicitação de 30% dos Consorciados ativos."},
+    "d", "Art. 19 da Lei 11.795/08 (confirmado por busca): AGE convocada pela administradora por iniciativa própria ou por 30% dos consorciados ATIVOS (não do total).", FONTE_LEG)
+
+add("legislacao", "Na constituição do Grupo de Consórcio, quantos Consorciados podem ser escolhidos para representar os interesses do grupo?",
+    {"a": "No máximo 5 Consorciados.", "b": "Depende da dimensão do grupo.", "c": "Até 3 Consorciados.", "d": "No mínimo 3 Consorciados."},
+    "c", "Art. 23, parágrafo único da Lei: o grupo escolhe, na 1ª AGO, ATÉ 3 consorciados representantes (confirmado por busca à lei — corrige erro comum de achar que é 'no mínimo 3').", FONTE_LEG)
+
+add("legislacao", "Marcelo teve sua cota de consórcio imobiliário contemplada por sorteio. Ele decidiu vender sua cota e precisa informar qual(is) será(ão) o(os) ponto(os) de análise da Administradora ao comprador:",
+    {"a": "Mercado / Capacidade de pagamento / Garantia", "b": "Capacidade de pagamento", "c": "Análise de crédito", "d": "Garantia / Mercado"},
+    "a", "Na transferência de cota contemplada, a administradora avalia capacidade de pagamento do cessionário, garantia oferecida e condições de mercado do bem.", FONTE_LEG)
+
+add("legislacao", "Quem representa o Grupo de Consórcio perante a Justiça ou, por exemplo, junto aos órgãos de proteção ao consumidor (PROCON)?",
+    {"a": "Os Representantes escolhidos em Assembleia.", "b": "Sua Administradora.", "c": "Sua Administradora e seus Consorciados, solidariamente.", "d": "Seu Banco."},
+    "b", "Art. 3º, §1º: o grupo é representado por sua administradora, em caráter irrevogável e irretratável, em juízo ou fora dele.", FONTE_LEG)
+
+add("legislacao", "Após o encerramento do grupo, quem tem direito a receber eventual saldo remanescente no fundo comum e de reserva?",
+    {"a": "Apenas os participantes excluídos.", "b": "A Administradora não tem responsabilidade de comunicar individualmente nenhum participante.",
+     "c": "Os participantes excluídos que não tenham resgatado seus créditos e os consorciados ativos.", "d": "Apenas os participantes ativos."},
+    "c", "Tanto consorciados ativos quanto excluídos com valores não resgatados têm direito à devolução no encerramento.", FONTE_LEG)
+
+add("legislacao", "Qual a lei que regula o Sistema de Consórcio?",
+    {"a": "Lei 9.514/97.", "b": "Lei 8.078/90.", "c": "Lei 11.795/08.", "d": "Lei 6.099/74."},
+    "c", "Lei 11.795, de 8 de outubro de 2008, é a Lei do Consórcio.", FONTE_LEG)
+
+add("legislacao", "'Os recursos dos grupos são obrigatoriamente depositados em instituição financeira, conforme orientação do BACEN, desde a sua disponibilidade até o uso conforme previsto em contrato.' Essa afirmativa é:",
+    {"a": "Falsa - pois os recursos do grupo pagam também custos não previstos em contrato, desde que validados pela administradora.",
+     "b": "Falsa - pois o BACEN não estabelece a forma de aplicação financeira para os recursos dos grupos.",
+     "c": "Verdadeira - somente para os valores coletados em dia, excetuando-se, portanto, as multas.",
+     "d": "Verdadeira - para valores coletados a qualquer tempo."},
+    "d", "Art. 26 da Lei: recursos coletados a QUALQUER TEMPO são depositados em instituição financeira e aplicados conforme regras do BACEN.", FONTE_LEG)
+
+add("legislacao", "João sempre se voluntaria a representar seus colegas e te questionou sobre como se dá a representação dos consorciados perante a administradora. Ao orientar este cliente, o que você NÃO pode afirmar sobre esse assunto?",
+    {"a": "Os representantes, em um total de três, são escolhidos pelo grupo na primeira assembleia.",
+     "b": "Os representantes podem ser substituídos por decisão da maioria dos consorciados em assembleia geral.",
+     "c": "Os representantes do grupo têm acesso aos documentos na administradora, mas não têm acesso a órgãos fiscalizadores e reguladores.",
+     "d": "Os representantes do grupo acompanham a sua gestão enquanto durar o grupo."},
+    "c", "Falso: os representantes TÊM acesso aos documentos E podem representar contra a administradora perante o órgão regulador/fiscalizador (confirmado na lei).", FONTE_LEG)
+
+add("legislacao", "Um cliente entrou em contato querendo saber sobre a participação dele nas decisões da assembleia. Você pode informar que: I - Cada cota de consorciado ativo corresponderá um voto. II - A administradora pode representar o ausente, com outorga de poderes, se previsto em contrato. III - A outorga de poderes deve ser específica quanto a dia, horário, local e assuntos.",
+    {"a": "I, Il e III.", "b": "l e ll.", "c": "I e lll.", "d": "Il e III."},
+    "a", "As três afirmativas estão corretas: voto por cota ativa, possibilidade de outorga de poderes prevista em contrato e especificidade da outorga.", FONTE_LEG)
+
+add("legislacao", "A administradora em que seu primo trabalha está em processo de liquidação extrajudicial. Neste caso, é CORRETO afirmar que:",
+    {"a": "Prejudicará o funcionamento dos grupos por que os interesses do conselho diretor se sobrepõem aos interesses dos clientes.",
+     "b": "Não prejudicará a continuidade das operações dos grupos, podendo o conselho diretor convocar assembleia geral extraordinária para propor ao grupo as medidas que atendam a seus interesses.",
+     "c": "Não prejudicará a continuidade das operações dos grupos, por que automaticamente o conselho diretor transfere esses grupos para outra administradora.",
+     "d": "Prejudicará o atendimento dos grupos por que a prioridade passa a ser a venda dos ativos da administradora e o pagamento de suas dívidas."},
+    "b", "A liquidação não interrompe automaticamente os grupos; há AGE para deliberar medidas, e o patrimônio do grupo é independente do da administradora.", FONTE_LEG)
+
+add("legislacao", "O Consorciado pode desistir de um Grupo de Consórcio em andamento?",
+    {"a": "Não - uma vez assinado o contrato, sua participação só se encerra com a quitação do plano.",
+     "b": "Sim - caso não tenha o seu bem entregue.", "c": "Sim - com bem entregue ou não.",
+     "d": "Não - a participação no Consórcio se encerra apenas ao fim da duração do plano."},
+    "b", "É possível desistir/cancelar se ainda não contemplado (bem não entregue); após contemplado e com bem entregue há alienação fiduciária vinculando o pagamento.", FONTE_LEG)
+
+add("legislacao", "Com relação às garantias necessárias para utilizar o crédito, você pode afirmar para seu cliente, EXCETO:",
+    {"a": "A administradora indeniza no caso de prejuízo decorrente de aprovação de garantias insuficientes.",
+     "b": "As garantias exigidas para uso do crédito devem estar explicitadas no contrato.",
+     "c": "A administradora não indeniza prejuízos, no caso de liberação de garantias, enquanto o consorciado não tiver quitado sua participação no grupo.",
+     "d": "O oferecedor de garantia de imóvel é responsável pelo pagamento integral das obrigações estabelecidas no contrato, inclusive da parte que remanescer após a execução dessa garantia."},
+    "a", "Falso: a administradora NÃO indeniza por prejuízo de garantia insuficiente que ela mesma aprovou — essa é a pegadinha clássica desse tema.", FONTE_LEG)
+
+add("legislacao", "O crédito de menor valor, vigente ou definido na data da constituição do grupo, não pode ser inferior a qual percentual do crédito de maior valor?",
+    {"a": "40% (quarenta por cento).", "b": "100% (cem por cento).", "c": "50% (cinquenta por cento).", "d": "20% (vinte por cento)."},
+    "c", "Regra de grupos de preços diferenciados: crédito de menor valor não pode ser inferior a 50% do de maior valor (confirmado por busca web).", FONTE_LEG)
+
+add("legislacao", "Podemos dizer que o regulamento do Grupo de Consórcios deve:",
+    {"a": "Ser registrado em Cartório de Registros de Títulos e Documentos da sede da Administradora.",
+     "b": "Ser mantido apenas na sede da Administradora.", "c": "Ser mantido em sigilo, por se tratar de documento sensível.",
+     "d": "Obedecer às normas do Banco Central do Brasil referentes a sigilo bancário."},
+    "a", "O regulamento, como documento formal do grupo, deve ser registrado em Cartório de Títulos e Documentos.", FONTE_LEG)
+
+add("legislacao", "Em qual documento devem estar expressas, de forma clara, as condições de operação do Consórcio, além dos direitos e deveres das partes envolvidas?",
+    {"a": "Anúncio do Grupo de Consórcio.", "b": "Contrato de Participação em Grupo de Consórcio, por Adesão.",
+     "c": "Ata de Assembleia Geral Ordinária.", "d": "Regulamento do Grupo de Consórcio, por Adesão."},
+    "d", "O Regulamento é o documento mais abrangente, contendo as regras gerais de operação do grupo (Glossário).", FONTE_LEG)
+
+add("legislacao", "O Consorciado excluído é obrigado a manter seus dados cadastrais atualizados?",
+    {"a": "Sim - e essa obrigação deve estar prevista em contrato.", "b": "Não - essa opção é facultativa.",
+     "c": "Não - uma vez excluído, o Consorciado não tem mais nenhum tipo de relação com o Grupo.",
+     "d": "Sim - mas apenas se quiser ser avisado sobre eventuais recebimentos residuais."},
+    "a", "A obrigação de manter dados atualizados persiste mesmo após exclusão, prevista em contrato.", FONTE_LEG)
+
+add("legislacao", "Considerando-se a natureza do contrato do Grupo de Consórcios, que tipo de grupo, dentre os listados a seguir, não poderá ser constituído:",
+    {"a": "Grupo que tem por objeto bens móveis e imóveis.", "b": "Grupo que tem por objeto bens ou conjunto de bem móveis.",
+     "c": "Grupo que tem por objeto serviço ou conjunto de serviços.", "d": "Grupo que tem por objeto bem imóveis."},
+    "a", "Grupos devem ter modalidade única (mesma natureza de bem/serviço) por isonomia — misturar móveis e imóveis num mesmo grupo não é permitido.", FONTE_LEG)
+
+add("legislacao", "Uma das administradoras concorrentes está em liquidação extrajudicial. Sobre este assunto, é CORRETO afirmar que: I - O liquidante publicará edital com requisitos para habilitação de administradoras interessadas. II - Cada administradora interessada somente pode se candidatar a 25% dos grupos disponíveis, salvo se as demais propostas forem recusadas. III - Expirado o prazo, o liquidante convocará AGE do grupo para deliberar sobre as propostas. IV - Os recursos dos grupos serão obrigatória e exclusivamente destinados aos objetivos dos contratos.",
+    {"a": "II, III e IV.", "b": "I, III e IV.", "c": "I, Il e IV.", "d": "I, Il e III."},
+    "b", "O item II (limite de 25%) é inverídico/inventado; I, III e IV estão corretos e alinhados à Lei.", FONTE_LEG)
+
+add("legislacao", "Você está elaborando contrato para um grupo interessado em adquirir imóvel em consórcio. É correto afirmar que:",
+    {"a": "Todas as afirmativas são verdadeiras.", "b": "O contrato de compra e venda de imóvel pode ser celebrado por instrumento particular.",
+     "c": "O contrato pode estabelecer a aquisição de imóvel em empreendimento imobiliário.",
+     "d": "Para efeito de cálculo de taxas, emolumentos e custas, considera-se o registro e a averbação do imóvel como um único ato."},
+    "c", "É permitido adquirir imóvel vinculado a empreendimento imobiliário, desde que ofertada garantia e atendidas condições contratuais.", FONTE_LEG)
+
+add("legislacao", "Você identificou que uma das afirmativas NÃO é verdadeira:",
+    {"a": "Restitui-se ao consorciado excluído não contemplado com base no percentual amortizado do valor do bem na data da assembleia de contemplação, mais os rendimentos financeiros dos recursos enquanto ele não os utiliza.",
+     "b": "Valores da multa e de juros moratórios, se previstos no contrato, serão destinados ao grupo e à administradora, não podendo ser estipulados para o grupo percentual inferior a 40%.",
+     "c": "O consorciado excluído não contemplado tem direito à restituição da importância paga ao fundo comum.",
+     "d": "Os direitos e obrigações contratuais podem ser transferidos a terceiros com a prévia anuência da administradora."},
+    "b", "A lei fixa o piso em 50% (não 40%) para o grupo na destinação de multas e juros moratórios — número trocado na alternativa.", FONTE_LEG)
+
+add("legislacao", "O fundo comum pode ser usado para as finalidades a seguir, EXCETO:",
+    {"a": "Pagar qualquer custo relativo ao grupo, a critério da administradora.", "b": "Pagar somente custos previstos no contrato.",
+     "c": "Restituir valores aos consorciados excluídos.", "d": "Atribuir crédito aos consorciados contemplados."},
+    "a", "O fundo comum só pode ser usado para finalidades PREVISTAS EM CONTRATO — 'a critério da administradora' sem previsão contratual é vedado.", FONTE_LEG)
+
+add("legislacao", "Marcos possui duas cotas em um mesmo grupo de consórcio. Isso significa que:",
+    {"a": "Nenhuma das afirmativas é verdadeira.", "b": "Ele tem dois contratos e cada cota é numerada correspondentemente.",
+     "c": "Não importa o número de cotas, ele terá recebido apenas um número de contrato.", "d": "Não importa o número de cotas, o voto na assembleia é por pessoa."},
+    "b", "Cada cota é individual e corresponde a um contrato/numeração própria (Glossário: Proposta/Contrato de Adesão é 'individual e por cota contratada').", FONTE_LEG)
+
+add("legislacao", "Um cliente ansioso ligou querendo saber sobre a constituição do grupo. Ao orientar este cliente o que você NÃO pode afirmar sobre esse assunto:",
+    {"a": "Considera-se o grupo de consórcio constituído a partir da realização da primeira assembleia.",
+     "b": "Todas as alternativas são falsas.", "c": "A data não é pré-definida na proposta, a qual ele deve consultar para saber a previsão para o grupo dele.",
+     "d": "É preciso ter adesões suficientes para assegurar a viabilidade econômico-financeira antes de agendar a primeira assembleia."},
+    "b", "Como as demais alternativas (a, c, d) são verdadeiras, a opção 'todas são falsas' é a única que não pode ser afirmada.", FONTE_LEG)
+
+add("legislacao", "Maria foi contemplada. Ela possui um financiamento em seu nome e quer saber se pode usar esse crédito para quitação total dele. Você informa que:",
+    {"a": "Somente parte do crédito pode ser usado para este fim.", "b": "O crédito pode ser usado com a prévia anuência da administradora e conforme condições do contrato.",
+     "c": "O crédito é dela e ela pode usar para quitar qualquer título.", "d": "O crédito só pode ser utilizado para aquisição parcial do financiamento."},
+    "b", "Art. 22, §3º: o contemplado pode destinar o crédito à quitação total de financiamento próprio, sujeita à prévia anuência da administradora.", FONTE_LEG)
+
+# ============================= PROCESSOS (30) =============================
+add("processos", "A transferência de cotas de grupo em andamento depende da anuência do(a):",
+    {"a": "PROCON.", "b": "Administradora.", "c": "Banco Central do Brasil.", "d": "ABAC."},
+    "b", "A transferência/cessão de cota exige anuência da administradora, mediante termo próprio.", FONTE_PROC)
+
+add("processos", "Gabriel é um consorciado que foi excluído de seu grupo. Ele tem direito aos recursos:",
+    {"a": "Que caracterizaram contribuição ao fundo comum.", "b": "Da soma de suas parcelas integrais.",
+     "c": "Da soma de suas parcelas, acrescidos de rendimentos.", "d": "Todas as anteriores."},
+    "a", "Art. 30: restituição é limitada à importância paga ao fundo comum, não à parcela integral (que também inclui TX/FR não restituíveis).", FONTE_PROC)
+
+add("processos", "João foi informado que os consórcios permitem apenas o acesso a veículos 0 km. Você foi abordado por João para validar a informação. Está correto afirmar que:",
+    {"a": "Grupos de consórcio permitem compra de veículo OKm ou usado, conforme estabelecer o contrato.",
+     "b": "Grupos de consórcio só aceitam veículos 0 km se forem caminhões/ônibus, leves podem ser usados.",
+     "c": "Grupos de consórcio só aceitam veículos 0 km se forem leves, caminhões podem ser usados.",
+     "d": "Grupos de consórcio aceitam veículos 0 km de todas as categorias, mas somente leves podem ser usados."},
+    "a", "A possibilidade de veículo novo ou usado depende do que for previsto em contrato/regulamento do grupo.", FONTE_PROC)
+
+add("processos", "Preparando o encerramento do grupo, você descobriu que: I - Inicia-se a partir da última assembleia de contemplação. II - Na última assembleia, atribui-se crédito a todos não contemplados. III - Administradora tem 60 dias para comunicar disponibilidade do crédito. IV - Comunicação só pode ser por meio impresso. V - Têm direito à devolução o consorciado ativo (saldo em Fundo Comum/Reserva) e o excluído que não resgatou o crédito parcial. VI - Crédito é disponibilizado apenas em conta poupança.",
+    {"a": "I, II, III e IV.", "b": "I, II, III e V.", "c": "III, IV, V e VI.", "d": "II, III, IV e V."},
+    "b", "IV e VI são falsas (comunicação não se restringe a meio impresso; crédito não se limita a conta poupança); I, II, III e V estão corretas.", FONTE_PROC)
+
+add("processos", "Discussão sobre garantias no processo de contemplação, você verificou que o entendimento estava correto, EXCETO:",
+    {"a": "As garantias iniciais em favor do Grupo devem recair sobre o bem adquirido por meio do consórcio.",
+     "b": "A exigência de garantias complementares deve estar prevista em contrato.",
+     "c": "Outras garantias complementares possíveis são: real (ex: fiduciária) ou pessoal (ex: aval ou fiança).",
+     "d": "Em um consórcio de imóveis o contemplado pode utilizar o crédito para aquisição de bens de outra natureza."},
+    "d", "Falso: em consórcio referenciado em imóvel, o crédito só pode ser usado para bem da mesma natureza (imóvel).", FONTE_PROC)
+
+add("processos", "Chegou o momento da assinatura da proposta de adesão. É importante considerar detalhes para sua validade; você NÃO pode afirmar que:",
+    {"a": "A pessoa plenamente capaz é aquela que já completou 18 anos.",
+     "b": "Os menores de 16 anos são relativamente incapazes, logo, não podem estar sozinhos no momento da assinatura.",
+     "c": "Os maiores de 16 anos e menores de 18 anos só podem assinar se os pais ou tutor assinam em conjunto.",
+     "d": "Os menores de 16 anos serão sempre representados pelos pais, ou, na falta ou incapacidade destes, pelo tutor."},
+    "b", "Falso: menores de 16 anos são ABSOLUTAMENTE incapazes (não relativamente) pelo Código Civil, devendo ser representados, e não apenas assistidos.", FONTE_PROC)
+
+add("processos", "Luis quer reativar sua cota que havia sido excluída há alguns meses e está preocupado em relação aos valores. Sobre isso, você pode afirmar:",
+    {"a": "O Consorciado permanece responsável pelo pagamento do saldo em atraso até a sua readmissão.",
+     "b": "Todas as afirmativas são verdadeiras.", "c": "A forma de pagamento desses valores poderá ser negociado com a Administradora.",
+     "d": "A multa e juros moratórios incidirão apenas sobre as parcelas não pagas até a exclusão."},
+    "b", "As três afirmativas individuais (a, c, d) são corretas sobre a reativação de cota excluída.", FONTE_PROC)
+
+add("processos", "Marta deixou de pagar parcelas, levando à sua exclusão do grupo. Você pode afirmar com relação à contemplação de consorciados excluídos, EXCETO:",
+    {"a": "O crédito corresponderá às parcelas pagas ao fundo comum do Grupo, deduzidos os encargos previstos em contrato.",
+     "b": "Como é preciso estar com as parcelas em dia, o consorciado excluído poderá receber o crédito.",
+     "c": "Sua contemplação ocorre somente por meio de sorteio.",
+     "d": "Marta precisaria estar com o pagamento das parcelas em dia para participar das assembleias de contemplação, vide critérios no contrato de adesão."},
+    "b", "Contraditório: o excluído por definição não está com parcelas em dia — a afirmativa se autocontradiz e é falsa.", FONTE_PROC)
+
+add("processos", "Você está conversando com seu cliente sobre os dados bancários dele. Dentre as orientações sobre esse tema, você NÃO pode afirmar que:",
+    {"a": "O cliente deve declarar expressamente que não autoriza/não possui conta em banco, se ele não quiser que o crédito seja depositado.",
+     "b": "O cliente é responsável por manter seus dados cadastrais atualizados com a Administradora, mesmo quando for consorciado excluído.",
+     "c": "O cliente deve autorizar o depósito em conta bancária de eventual crédito apurado no encerramento do grupo.",
+     "d": "O cliente somente poderá utilizar conta corrente para consórcio ativo."},
+    "d", "Falso: não há essa restrição de conta corrente apenas para consórcio ativo; excluídos também podem receber via conta bancária.", FONTE_PROC)
+
+add("processos", "Hamilton possui 80 cotas de um grupo, que corresponde a 10% do total de cotas. Para adquirir mais cotas de consórcio:",
+    {"a": "Só pode comprar de mesma Administradora.", "b": "Ele pode comprar do mesmo grupo, já que confia na Administradora.",
+     "c": "Ele deve comprar de outro Grupo de Consórcio.", "d": "Só pode comprar se for de outra Administradora."},
+    "c", "Há limite de 10% de cotas por consorciado no mesmo grupo; atingido esse limite, deve buscar outro grupo.", FONTE_PROC)
+
+add("processos", "O plano de consórcio deve estar adequado ao objetivo de _______ do cliente. Complete a frase.",
+    {"a": "Consumo.", "b": "Atuação profissional.", "c": "Endividamento.", "d": "Previdência."},
+    "a", "O consórcio é instrumento de autofinanciamento para aquisição de bens/serviços — objetivo de consumo, não de endividamento ou previdência.", FONTE_PROC)
+
+add("processos", "O consorciado perdeu o emprego e não poderá mais pagar o consórcio. Buscando diminuir seu endividamento para não ficar inadimplente, ele pode:",
+    {"a": "Vender sua cota.", "b": "Oferecer lance para contemplar a cota.", "c": "Efetuar empréstimo para arcar com as obrigações perante o grupo.", "d": "Finalizar o grupo."},
+    "a", "Vender/transferir a cota é a alternativa correta para reduzir o endividamento sem inadimplência.", FONTE_PROC)
+
+add("processos", "João possui perfil poupador e decide comprar uma cota de um Grupo de Consórcio como alternativa de investimento em produto de renda fixa. João fez uma opção:",
+    {"a": "Incorreta, consórcio caracteriza uma compra cooperada, não um produto de renda fixa.",
+     "b": "Correta para bens e serviços, mas incorreta para imóveis.",
+     "c": "Correta, consórcio caracteriza uma compra cooperada, não um produto de renda fixa.",
+     "d": "Incorreta para bens e serviços, mas correta para imóveis."},
+    "a", "Consórcio é autofinanciamento/compra cooperada — não é produto de investimento em renda fixa.", FONTE_PROC)
+
+add("processos", "Na venda de quaisquer produtos e serviços financeiros, o cliente é caracterizado como a parte mais:",
+    {"a": "Frágil, assistindo a instituição na relação com o consumidor.", "b": "Favorecida, causando apenas ônus às instituições.",
+     "c": "Frágil, sendo protegido pelo Código de Defesa do Consumidor.", "d": "Frágil, mas não é assistido pelo Código de Defesa do Consumidor"},
+    "c", "O consumidor é a parte vulnerável na relação de consumo, protegido pelo CDC.", FONTE_PROC)
+
+add("processos", "Ao rever seus estudos sobre o processo de contemplação, verifique que as conclusões estavam corretas, EXCETO: I - O valor do crédito é disponibilizado após a contemplação e os rendimentos até o dia anterior à sua utilização vão para o fundo comum do grupo e pagamentos de taxas. II - O valor do crédito é acrescido dos rendimentos financeiros do terceiro dia da contemplação até o dia anterior à sua utilização. III - O Consorciado contemplado escolhe o fornecedor do produto ou serviço e comunica à Administradora. IV - Para retirada do valor do crédito em dinheiro/espécie é obrigatório que o plano de consórcio esteja quitado e contemplado.",
+    {"a": "I e ll.", "b": "III e IV.", "c": "Il e IV.", "d": "I."},
+    "d", "Apenas I é falsa: os rendimentos financeiros do 3º dia útil após a contemplação são ACRESCIDOS ao crédito do consorciado (art. 24, §1º), e não destinados ao fundo comum/taxas como afirma o item I. Item II está correto e confirma essa regra (confirmado por consulta à Lei 11.795/08).", FONTE_PROC)
+
+add("processos", "Carlos está fechando negócio com Pedro e quer passar as cotas de consórcio para ele. Carlos já pagou 1/3 do contrato. Você pode dar as seguintes orientações, EXCETO:",
+    {"a": "O cessionário paga ao cedente o valor acordado entre eles e assume integralmente os direitos, os deveres e as obrigações do cedente com relação ao grupo.",
+     "b": "Somente cotas não contempladas podem ser cedidas ou transferidas.",
+     "c": "É preciso utilizar um termo fornecido pela administradora e obter sua anuência para realizar a cessão do contrato.",
+     "d": "Conforme a Administradora e os procedimentos previstos no contrato, o procedimento de transferência ou cessão pode ser cobrado."},
+    "b", "Falso: cotas contempladas também podem ser transferidas (ex.: venda do bem alienado é um dos motivos comuns de transferência).", FONTE_PROC)
+
+add("processos", "Sou um consorciado novo no grupo, como verifico as condições para efetuar um lance?",
+    {"a": "No contrato de adesão.", "b": "Através do contrato social da Administradora.", "c": "Com outro consorciado.", "d": "No balcão do banco."},
+    "a", "As condições de lance estão previstas no contrato de adesão/proposta.", FONTE_PROC)
+
+add("processos", "Antônio gostaria de saber mais sobre lance e as possibilidades para aumentar sua chance de contemplação. Sobre isso você pode afirmar, EXCETO:",
+    {"a": "Existem dois tipos de lance no consórcio: com recursos próprios e o embutido.",
+     "b": "É a antecipação do pagamento de parcelas, conforme critérios estabelecidos em contrato.",
+     "c": "Se houver empate, pode-se realizar o sorteio entre os empatados, lance adicional - conforme critérios estabelecidos pela Administradora em contrato.",
+     "d": "É certo que com o lance Antônio poderá presentar o filho."},
+    "d", "Falso: nenhum lance garante contemplação, pois depende de haver recursos e desfecho da assembleia.", FONTE_PROC)
+
+add("processos", "O cliente tem a necessidade imediata de adquirir um bem. Aderir a um Grupo de Consórcio lhe garante esse atendimento?",
+    {"a": "Sim.", "b": "Sim, desde que possua disponibilidade de lance superior a 50% do valor do crédito.",
+     "c": "Não, exceto quando ele mesmo administra o grupo.", "d": "Não."},
+    "d", "Consórcio não garante aquisição imediata: depende de sorteio ou lance vencedor em assembleia.", FONTE_PROC)
+
+add("processos", "A primeira assembleia de um grupo é conhecida como:",
+    {"a": "Extraordinária.", "b": "De constituição.", "c": "Ordinária.", "d": "De trabalhos iniciais e checagens."},
+    "b", "A primeira assembleia (inaugural, dentro da AGO) é a de constituição formal do grupo.", FONTE_PROC)
+
+add("processos", "A Administradora pode negar a transferência de cota pelos seguintes motivos, EXCETO:",
+    {"a": "Cedente com apontamento nos Órgãos de Proteção ao Crédito.", "b": "Cessionário com apontamento nos Órgãos de Proteção ao Crédito.",
+     "c": "Possuir o limite máximo de cotas permitido pela Administradora.", "d": "Renda insuficiente."},
+    "a", "A situação de crédito do CEDENTE (quem sai) não é motivo válido de negativa — o que importa é a capacidade do CESSIONÁRIO (quem entra), que assumirá as obrigações.", FONTE_PROC)
+
+add("processos", "O que é grupo em formação?",
+    {"a": "Que está em processo de captação de consorciados, mas já realizou assembleia de constituição.",
+     "b": "Que está em processo de captação de consorciados, e ainda não realizou assembleia de constituição.",
+     "c": "Que cessou o processo de captação de consorciados, mas já realizou assembleia de constituição.",
+     "d": "Que cessou o processo de captação de consorciados, e ainda não realizou assembleia de constituição."},
+    "b", "Grupo em formação capta consorciados até haver viabilidade financeira para a 1ª AGO, que ainda não ocorreu.", FONTE_PROC)
+
+add("processos", "José quer entender mais sobre AGO e AGE. Você pode explicar que: I - A reunião de constituição do grupo é uma Assembleia Extraordinária. II - A reunião onde se faz a prestação de contas e a contemplação chama-se Assembleia Geral Ordinária. III - A prestação de contas compreende valores arrecadados, rendimento de aplicações, número de contemplados e a contemplar, entre outras informações. IV - Não existe um calendário prévio de assembleias.",
+    {"a": "Il e lII.", "b": "I e ll.", "c": "III e IV.", "d": "I e IV."},
+    "a", "A constituição é dentro da AGO (não AGE - item I falso); IV é falso pois há periodicidade prevista em contrato; II e III estão corretas.", FONTE_PROC)
+
+add("processos", "A garantia ofertada pelo contemplado dá segurança para:",
+    {"a": "Consorciado, grupo e administradora.", "b": "Consorciado somente.", "c": "Consorciado e grupo.", "d": "Administradora."},
+    "a", "A garantia protege todo o sistema: o próprio contemplado, o grupo (recursos) e a administradora (gestão).", FONTE_PROC)
+
+add("processos", "Alguns clientes de um grupo desistiram e você pensa em oferecer essas cotas para Maria. Você destaca que: I - Em grupo em andamento, é possível adquirir cotas de reposição (número de consorciado excluído). II - Ela pagará prestação maior que quem iniciou o grupo, pois terá prazo menor até o encerramento. III - Todos devem pagar 100% do valor do contrato até o encerramento. IV - O contrato de adesão segue os sistemas e formas da Administradora quanto às cotas vagas. V - Maria pagará percentual de amortização mensal maior que o consorciado desde a primeira assembleia.",
+    {"a": "Todas as afirmativas são verdadeiras.", "b": "III, IV e V.", "c": "I, Il e III.", "d": "I, Il e V."},
+    "d", "I, II e V estão corretas (prazo menor implica prestação e % de amortização maiores); III é uma generalização falsa.", FONTE_PROC)
+
+add("processos", "O cliente desconfia que multas e juros estão sendo cobrados de maneira errada. Não conseguindo contato com a Administradora, que documento você pode indicar para esclarecer as dúvidas?",
+    {"a": "Comunicado de assembleia.", "b": "Tabela de tarifas do BACEN.", "c": "Tabela de limites.", "d": "Contrato de adesão."},
+    "d", "As regras de multas/juros aplicáveis estão especificadas no contrato de adesão do consorciado.", FONTE_PROC)
+
+add("processos", "Ao explicar sobre a proposta de adesão a um novo colega, você ressaltou a importância da qualidade de seu preenchimento. Você fez isso porque: I - Pode levar a não formar o grupo. II - O preenchimento incorreto atrasa a efetivação da venda. III - Erros podem levar à desistência do Consorciado e à devolução de parcelas. IV - É muito detalhista e perfeccionista, o que importa é fechar a venda. V - Impacta a estrutura administrativa e gera retrabalho.",
+    {"a": "I, II, III e V.", "b": "I, III, IV e V.", "c": "I, II, III e IV.", "d": "II, III, IV e V."},
+    "a", "IV contradiz as boas práticas ('o que importa é fechar a venda' é postura reprovável); I, II, III e V são consequências reais de má qualidade no preenchimento.", FONTE_PROC)
+
+add("processos", "Você é responsável pela formação de um novo Grupo. Ao alinhar com sua equipe, você NÃO pode afirmar que:",
+    {"a": "Quando conseguirem Propostas de Adesão suficientes para viabilizar financeiramente as contemplações por sorteio, conforme previsto em contrato, será possível formar o Grupo.",
+     "b": "As cotas que estiverem vagas poderão ser comercializadas no andamento do Grupo.",
+     "c": "O Grupo pode ser formado e ainda assim restarem cotas vagas.",
+     "d": "O Grupo só poderá ser formado depois que vocês venderem todas as cotas."},
+    "d", "Falso: não é preciso vender 100% das cotas — basta viabilidade econômico-financeira (Lei 11.795/08).", FONTE_PROC)
+
+add("processos", "Qual a ordem de contemplação dos Consorciados?",
+    {"a": "Lances / Il - Sorteio.", "b": "Sorteio Ativo / Sorteio Excluído / Lances.", "c": "Lances Maior valor / II - Lances Menor valor.", "d": "Sorteio Ativo / Lances / Sorteio Excluído"},
+    "b", "Ordem padrão de assembleia: sorteio para ativos, depois sorteio para excluídos (restituição), depois lances — confirmado nos dois simulados reais.", FONTE_PROC)
+
+add("processos", "Qual cliente não pode ser contemplado?",
+    {"a": "Ativo", "b": "Excluído", "c": "Desistente", "d": "Quitado"},
+    "c", "O desistente não concorre a nada — apenas ativos e excluídos (para restituição) concorrem, conforme art. 22, §2º da Lei — confirmado nos dois simulados reais.", FONTE_PROC)
+
+# ============================= CÁLCULOS (20) =============================
+add("calculos", "João possui um plano de Consórcio com crédito de R$ 30.000,00; duração de 48 meses. Pagou 15 prestações, e agora deseja mudar para uma faixa de crédito de R$ 45.000,00. Taxa de administração e fundo de reserva são de 10% cada; a diferença em relação às que já passaram deve ser paga de imediato. Quanto ele deve desembolsar à vista?",
+    {"a": "R$ 5.625,00.", "b": "R$ 15.000,00.", "c": "R$ 11.250,00.", "d": "R$ 4.687,50."},
+    "a", "Categoria antiga: 30.000×1,2=36.000/48=750/mês×15=11.250 pago. Categoria nova: 45.000×1,2=54.000/48=1.125/mês×15=16.875 deveria ter pago. Diferença: 16.875−11.250=5.625.", FONTE_CALC)
+
+add("calculos", "Plano de percentuais fixos, 70 meses, crédito R$ 80.000,00, FR 1,5% e TX 10%. Você pode passar as informações a seguir, EXCETO:",
+    {"a": "O valor total do contrato é composto pelo valor do crédito, mais taxa de administração, fundo comum e fundo de reserva.",
+     "b": "O percentual mensal da taxa de administração é de 0,143% e do fundo de reserva é de 0,021%, correspondendo em reais a R$ 114,40 e R$ 16,80, respectivamente.",
+     "c": "A parcela mensal total é de R$ 1.274,29. Porém, falta incorporar valores não mencionados no contrato, como despesas bancárias exclusivas deste grupo.",
+     "d": "O percentual mensal do fundo comum do plano escolhido por eles é de 1,43%, que em reais dá R$ 1.144,00."},
+    "b", "Os valores em reais estão errados: TX mensal = 8.000/70 = R$114,29 (não 114,40) e FR mensal = 1.200/70 = R$17,14 (não 16,80).", FONTE_CALC)
+
+add("calculos", "José possui uma cota de consórcio com valor de 450 mil de crédito e duração de 80 meses. Na 30ª AGO, quanto já foi amortizado do fundo comum e qual o saldo devedor, respectivamente?",
+    {"a": "R$ 3.515,63 e R$ 5.625,00.", "b": "R$ 168.750,00 e R$ 281.250,00.", "c": "R$ 5.625,00 e R$ 3.515,63.", "d": "R$ 281.250,00 e R$ 168.750,00."},
+    "b", "PMT fundo comum = 450.000/80 = 5.625/mês. Amortizado em 30 meses = 5.625×30 = 168.750. Saldo devedor = 450.000−168.750 = 281.250.", FONTE_CALC)
+
+add("calculos", "Mariana tem contrato de 60 meses, já pagou 16 parcelas, e tem as 4 últimas em atraso. Ela pediu ajuda para calcular o percentual mensal.",
+    {"a": "1,79%.", "b": "1,13%.", "c": "0,13%.", "d": "1,67%."},
+    "d", "Percentual mensal (fundo comum) = 1/prazo = 1/60 = 1,67% ao mês.", FONTE_CALC)
+
+add("calculos", "Joaquim possui cota de R$ 90.000,00, 50 meses, quer ofertar lance embutido de 40% do saldo devedor. Já quitou 30 parcelas; TX e FR são 5% cada. Qual o valor do lance e quanto receberá do crédito contemplado?",
+    {"a": "Lance: R$ 36.000,00 - Crédito: 54.000,00.", "b": "Lance: R$ 14.400,00 - Crédito: 75.600,00.",
+     "c": "Lance: R$ 15.840,00 - Crédito: 90.000,00.", "d": "Lance: R$ 15.840,00 - Crédito: 74.160,00."},
+    "d", "Categoria=90.000×1,1=99.000/50=1.980/mês×30=59.400 pago. Saldo devedor=99.000−59.400=39.600×0,4=15.840 (lance). Como é embutido, sai do próprio crédito: 90.000−15.840=74.160.", FONTE_CALC)
+
+add("calculos", "Joaquim está com parcela atrasada há 4 meses. Crédito R$ 40.000,00, 50 meses, TX 10%, FR 2%. Juros 1%/mês e multa 2% sobre a parcela. Pode-se afirmar, EXCETO: I - Parcela=R$896,00. II - Parcela=R$816,00 pois não se incorpora TX. III - Juros para 4 meses=R$35,84. IV - Multa=R$20,00. V - Valor a pagar para quitar=R$949,76.",
+    {"a": "IV e V.", "b": "I e lll.", "c": "II e IV.", "d": "Il e lll."},
+    "c", "Parcela real=40.000×1,12/50=896 (I verdadeiro, II falso pois TX é sempre incorporada). Multa=896×2%=17,92 (IV afirma 20,00, falso). Juros=896×1%×4=35,84 (III verdadeiro). Total=896+35,84+17,92=949,76 (V verdadeiro). Falsas: II e IV.", FONTE_CALC)
+
+add("calculos", "João fez consórcio de imóvel de R$ 600.000,00, 80 meses, TX 10%, FR 2%. Juntou R$15.000 da poupança e R$30.000 de FGTS, e quer abater o restante do crédito a receber, para um lance equivalente a 10 parcelas. Quanto será o crédito liberado e o percentual do lance em relação à categoria?",
+    {"a": "R$ 561.000,00 / 12,5%.", "b": "R$ 600.000,00 / 14%.", "c": "R$ 84.000 / 0,125%.", "d": "R$ 672.000 / 1,4%."},
+    "a", "Categoria=600.000×1,12=672.000/80=8.400/mês×10=84.000(lance total). Recursos próprios=45.000; embutido=84.000−45.000=39.000. Crédito liberado=600.000−39.000=561.000. %=84.000/672.000=12,5%.", FONTE_CALC)
+
+add("calculos", "Cássia paga R$ 5.050,50 de amortização mensal de fundo comum, correspondendo a 1,11%. Qual a duração de seu plano e o valor de seu crédito total?",
+    {"a": "90 meses / R$ 455.000,00.", "b": "60 meses / R$ 750.000,00.", "c": "70 meses / R$ 550.000,00.", "d": "80 meses / R$ 500.000,00."},
+    "a", "1/90 = 1,11% confere com a duração de 90 meses; crédito = 5.050,50×90 ≈ R$455.000,00.", FONTE_CALC)
+
+add("calculos", "Três amigas compraram consórcio de R$ 80.000,00 cada. Marta fez plano de 50 meses, Carla de 60 e Janaína de 70. Calcule, respectivamente, valor de suas prestações.",
+    {"a": "R$ 2.288,00 / R$ 1.600,00 / R$ 1.336,00.", "b": "R$ 1.144,00 / R$ 1.000,00 / R$ 888,00.",
+     "c": "R$ 1.300,00 / R$ 1.240,00 / R$ 1.100,00.", "d": "R$ 1.600,00 / R$ 1.333,33 / R$ 1.142,86."},
+    "d", "80.000/50=1.600; 80.000/60=1.333,33; 80.000/70=1.142,86 (considerando apenas fundo comum, sem TX/FR informados).", FONTE_CALC)
+
+add("calculos", "Bianca quer quitação antecipada. Paga parcela de R$ 1.380,00, plano de 60 meses, já quitou 60%. TX 8% e FR 7%. Qual o valor necessário para a quitação?",
+    {"a": "R$ 33.120,00.", "b": "R$ 28.800,00.", "c": "R$ 49.680,00.", "d": "R$ 43.200,00."},
+    "a", "Categoria=1.380×60=82.800. Já pago (60%=36 parcelas)=1.380×36=49.680. Saldo devedor=82.800−49.680=33.120.", FONTE_CALC)
+
+add("calculos", "Martinha tem contrato de R$ 80.000,00 em 60 meses. Já pagou 10 parcelas, está em dia, e gostaria de dar um lance de 30,1%. Podemos afirmar que o valor desse lance:",
+    {"a": "Representa menos que 18 parcelas.", "b": "Representa mais que 20 parcelas.", "c": "Equivale a 20 parcelas.", "d": "Equivale a 18 parcelas."},
+    "d", "Parcela=80.000/60=1.333,33. Lance=80.000×30,1%=24.080. 24.080/1.333,33≈18,06 parcelas — equivale a aproximadamente 18 parcelas.", FONTE_CALC)
+
+add("calculos", "Isabel possui cota de crédito R$50.000,00, 48 meses, migrando para R$75.000,00, sem pagamento à vista (diferença diluída). TX e FR mantidos em 12% e 8%. Já quitou 10 parcelas. Quanto irá subir sua prestação mensal?",
+    {"a": "R$ 1.250,00.", "b": "R$ 2.039,47.", "c": "R$ 625,00.", "d": "R$ 789,47."},
+    "d", "Categoria antiga=60.000/48=1.250/mês×10 pagas=12.500. Categoria nova=90.000. Restam 38 meses: (90.000−12.500)/38=2.039,47. Aumento=2.039,47−1.250=789,47.", FONTE_CALC)
+
+add("calculos", "George já pagou metade de seu plano (crédito R$90.000, 36 meses, TX10%, FR2%) e pretende ofertar um lance de 3 parcelas em espécie mais 3 em lance embutido. Qual o valor nominal do lance total e quanto ele irá retirar do crédito?",
+    {"a": "Lance Total = R$ 16.800,00 e Crédito = R$ 73.200,00.", "b": "Lance Total = R$ 16.800,00 e Crédito = R$ 81.600,00.",
+     "c": "Lance Total = R$ 8.400,00 e Crédito = R$ 81.600,00.", "d": "Lance Total = R$ 8.400,00 e Crédito = R$ 90.000,00."},
+    "b", "Categoria=90.000×1,12=100.800/36=2.800/mês. Lance total (6 parcelas)=2.800×6=16.800. Embutido (3 parcelas)=8.400 sai do crédito: 90.000−8.400=81.600.", FONTE_CALC)
+
+add("calculos", "Crédito R$100.000,00, 36 meses, TX 7%, FR 3%. Na 10ª AGO, Maria ofertou lance de 25% do valor do plano; Miguel ofertou 12 parcelas. Ambos desde o início. Quem efetuou o maior lance?",
+    {"a": "Maria.", "b": "Houve empate.", "c": "Não é possível calcular sem saber o valor da Parcela Mensal.", "d": "Miguel."},
+    "d", "Categoria=110.000. Maria: 110.000×25%=27.500. PMT=110.000/36=3.055,56. Miguel: 3.055,56×12=36.666,67 — maior que o de Maria.", FONTE_CALC)
+
+add("calculos", "O reajuste das parcelas é um assunto que gera dúvidas. Sobre isso, as afirmativas corretas são: I - O crédito é atualizado conforme regras contratuais, podendo ser índice de preço ou valor sugerido pela montadora/fabricante. II - Se a regra for índice de preço, a atualização é anual, considerando a data de abertura do grupo. III - Se índice de preço, atualização semestral em janeiro/agosto. IV - Em imóveis, o mais usado é o INCC; em serviços, o IGPM. V - Se preço sugerido pelo fabricante/montadora, o crédito é corrigido sempre que sugerirem novo preço. VI - Nesse caso, correção é semestral. VII - Ao corrigir, apenas parcelas vincendas são reajustadas. VIII - A parte de parcelas vencidas é redistribuída nas vincendas.",
+    {"a": "III, IV, V, e VII.", "b": "II, III, VI e VII.", "c": "I, II, III, IV e V.", "d": "I, II, IV, V e VII."},
+    "d", "III, VI e VIII trazem periodicidades fixas fabricadas/incorretas; I, II, IV, V e VII são consistentes com o mecanismo de reajuste da carta de crédito.", FONTE_CALC)
+
+add("calculos", "Carlos adquiriu cota vaga em plano com crédito R$120.000,00 e duração de 80 meses, restando 40 meses. TX 10% e FR 5%. Qual será o valor da parcela mensal dele?",
+    {"a": "R$ 1.725,60.", "b": "R$ 1.950,00.", "c": "R$ 3.540,00.", "d": "R$ 3.450,00."},
+    "d", "Categoria=120.000×1,15=138.000. Cota vaga nunca foi paga, então o saldo integral (138.000) deve ser quitado nos 40 meses restantes: 138.000/40=3.450.", FONTE_CALC)
+
+add("calculos", "Sobre fundo de reserva e contratação de seguro você pode afirmar, EXCETO: I - Seguro protege o grupo em situações como insuficiência de recursos no fundo comum, despesas bancárias exclusivas e custos judiciais. II - A cobrança do fundo de reserva ocorre independentemente de previsão contratual. III - O cálculo do fundo de reserva é similar ao da taxa de administração (percentual/prazo). IV - Para ser cobrado, o fundo de reserva e o seguro precisam ser validados em assembleia ordinária, não bastando estar no contrato. V - No encerramento, o saldo do fundo de reserva é distribuído proporcionalmente. VI - Os seguros mais comuns em consórcio são: quebra de garantia, prestamista, de vida e desemprego.",
+    {"a": "I, III e V.", "b": "I, Il e IV.", "c": "II, IV e VI.", "d": "III, V e VI."},
+    "c", "II é falso (cobrança exige previsão contratual); IV é falso (basta estar no contrato, não exige validação em AGO); VI generaliza incorretamente os tipos de seguro do glossário (só prestamista e quebra de garantia são específicos de consórcio).", FONTE_CALC)
+
+add("calculos", "Anúncio: Consórcio de Motocicleta, 36 parcelas de R$ 400,00. TX 10%, FR 10%. Qual o valor do crédito (moto)?",
+    {"a": "R$ 14.400,00.", "b": "R$ 9.600,00.", "c": "R$ 17.280,00.", "d": "R$ 12.000,00."},
+    "d", "Total pago=400×36=14.400=categoria=crédito×1,2. Crédito=14.400/1,2=12.000.", FONTE_CALC)
+
+add("calculos", "Daniel adquiriu cota com duração de 48 meses. Crédito de R$180.000,00, TX de R$21.000,00 e FR de R$9.000,00. Qual o valor da parcela mensal e, respectivamente, os percentuais de TX e FR?",
+    {"a": "Parcela: R$ 3.750,00; Taxa de Administração: 11,67%; Fundo de Reserva: 5%.",
+     "b": "Parcela: R$ 4.375,00; Taxa de Administração: 10%; Fundo de Reserva: 4,29%.",
+     "c": "Parcela: R$ 3.750,00; Taxa de Administração: 10%; Fundo de Reserva: 4,29%.",
+     "d": "Parcela: R$ 4.375,00; Taxa de Administração: 11,67%; Fundo de Reserva: 5%."},
+    "d", "Parcela=(180.000+21.000+9.000)/48=4.375. TX%=21.000/180.000=11,67%. FR%=9.000/180.000=5%.", FONTE_CALC)
+
+add("calculos", "O cliente está interessado em adquirir cota vaga em grupo de 60 meses, restando apenas 40 meses. Qual será sua amortização mensal?",
+    {"a": "2,50% a.m.", "b": "5,00% a.m.", "c": "1,67% a.m.", "d": "4,00% a.m."},
+    "a", "Amortização mensal = 1/meses restantes = 1/40 = 2,5% ao mês.", FONTE_CALC)
+
+# ============================= SALVAR =============================
+with open("/home/claude/pca10-platform/data/questions.json", "w", encoding="utf-8") as f:
+    json.dump({
+        "meta": {
+            "certificacao": "PCA-10 (ABAC)",
+            "total_questoes": len(questions),
+            "modulos": ["etica", "legislacao", "processos", "calculos"],
+            "fonte": "Extraído e resolvido a partir dos PDFs originais + validado contra 2 simulados reais + Lei 11.795/2008",
+            "gerado_em": "2026-07-07"
+        },
+        "questions": questions
+    }, f, ensure_ascii=False, indent=2)
+
+print(f"OK: {len(questions)} questões salvas em data/questions.json")
+from collections import Counter
+print(Counter(q["modulo"] for q in questions))

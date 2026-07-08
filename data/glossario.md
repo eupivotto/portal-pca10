@@ -98,3 +98,93 @@ excluído (tratamento contábil independente da administradora — não são inc
 
 ## Custo Efetivo Total (CET)
 Custo = Σ PMTs pagas − Valor Emprestado (valor do crédito recebido)
+
+> A partir daqui: base legal extraída da **Lei nº 11.795/2008** (Lei do Sistema de
+> Consórcios), fonte oficial citada no edital ABAC para o módulo "Objetivos e
+> Legislação" — o módulo de maior peso somado da prova.
+
+## Fiscalização pelo Banco Central (BACEN)
+Compete ao BACEN: autorizar funcionamento e transferência de controle das administradoras;
+aprovar atos societários; normatizar operações, supervisão prudencial, contabilização e
+garantias; fixar penalidades; fiscalizar e aplicar sanções; decretar intervenção e liquidação
+extrajudicial (Lei 11.795/2008, Art. 6º e 7º).
+
+## Grupo de Consórcio (natureza jurídica)
+É uma sociedade não personificada constituída pelos consorciados (Art. 3º). A administradora
+representa o grupo de forma irrevogável e irretratável. O patrimônio do grupo é próprio,
+autônomo e distinto da administradora — não se comunica com o patrimônio dela: bens do
+grupo não integram o ativo da administradora, não respondem por dívidas dela e não podem
+ser penhorados por credores dela (Art. 3º §3º; Art. 5º §5º).
+
+## Contrato de Participação (base legal)
+Instrumento plurilateral associativo que constitui fundo pecuniário (Art. 10). A proposta de
+participação vira contrato quando aprovada; o contrato se aperfeiçoa na data de constituição
+do grupo (primeira assembleia). O contrato de consorciado contemplado é título executivo
+extrajudicial.
+
+## Limite de Participação por Consorciado
+A participação de um mesmo consorciado num grupo é limitada a percentual de cotas fixado
+pelo BACEN (Art. 15). A própria administradora pode adquirir cotas de grupo sob sua
+administração, mas só concorre a sorteio depois que todos os demais já tiverem sido
+contemplados.
+
+## Constituição do Grupo (Assembleia Inaugural)
+O grupo se constitui com a realização da primeira assembleia (AGO inaugural), convocada
+quando há adesões suficientes para viabilidade econômico-financeira (Art. 16). O grupo escolhe
+até 3 consorciados para representá-lo perante a administradora, acompanhando a regularidade
+da gestão, com mandato igual à duração do grupo (Art. 17).
+
+## Assembleia Geral Extraordinária (AGE) — base legal
+Convocada pela administradora ou por solicitação de 30% dos consorciados ATIVOS, para
+deliberar sobre assuntos não tratados em AGO (Art. 19).
+
+## Voto em Assembleia
+Cada cota corresponde a um voto; deliberações por maioria simples (Art. 20). Representação
+por procuração é permitida na AGO se prevista em contrato; na AGE exige poderes específicos
+com detalhamento de dia/hora/local/assuntos.
+
+## Consorciado Ativo
+É aquele que mantém vínculo obrigacional com o grupo, EXCETO o inadimplente não
+contemplado e o excluído (Art. 21). Só o consorciado ativo não contemplado participa de AGE
+sobre suspensão/retirada de produção, extinção de índice de atualização, encerramento
+antecipado, e assuntos de seu interesse exclusivo.
+
+## Base Legal da Contemplação
+Contemplação = atribuição do crédito ao consorciado, por sorteio ou lance, condicionada à
+existência de recursos suficientes no fundo comum (Art. 22 e 23). O valor do crédito equivale
+ao valor do bem/serviço vigente na data da assembleia de contemplação, acrescido de
+rendimentos financeiros líquidos proporcionais ao período de aplicação.
+
+## Base Legal do Fundo Comum
+Constituído pelas prestações pagas pelos consorciados, por multas e juros moratórios
+destinados ao grupo, e pelos rendimentos da aplicação financeira (Art. 25 e parágrafo único).
+Destina-se ao crédito dos contemplados e à restituição dos excluídos.
+
+## Multa e Juros Moratórios (destinação legal)
+O contrato não pode destinar ao grupo percentual inferior a 50% das multas e juros moratórios
+recebidos por inadimplência — o restante fica com a administradora (Art. 28).
+
+## Restituição ao Excluído (base legal)
+O consorciado excluído não contemplado tem direito à restituição calculada sobre o percentual
+amortizado do valor do bem/serviço vigente na data da contemplação (não da exclusão),
+acrescida de rendimentos financeiros (Art. 30).
+
+## Prazos de Encerramento (base legal)
+Em até 60 dias da última assembleia de contemplação, a administradora comunica aos não
+contemplados que os créditos estão à disposição (Art. 31). O encerramento efetivo do grupo
+ocorre em até 120 dias da última assembleia, com prestação de contas definitiva (Art. 32). A
+pretensão do consorciado/excluído contra o grupo ou a administradora prescreve em 5 anos
+(Art. 32 §2º).
+
+## Recursos Não Procurados (base legal)
+As disponibilidades remanescentes após o encerramento do grupo são "recursos não
+procurados" (Art. 33). A administradora vira gestora desses valores, podendo aplicar taxa de
+permanência sobre o saldo, e deve pagar o consorciado em até 30 dias do comparecimento
+dele. Esses recursos têm tratamento contábil independente dos registros próprios da
+administradora (Art. 38).
+
+## Penalidades às Administradoras (base legal)
+O BACEN pode aplicar: advertência, suspensão de cargo, inabilitação temporária, regime
+especial de fiscalização, multa de até 100% das importâncias recebidas (dobrada em
+reincidência), multa de até R$ 500.000,00, suspensão de operações por até 2 anos, e cassação
+da autorização (Art. 42). Reincidência = nova infração do mesmo dispositivo dentro de 5 anos.

@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import glossarioRaw from '../../data/glossario.md?raw'
-import { parseSecoes, palavrasChave } from '../lib/glossario'
+import regulamentacaoRaw from '../../data/regulamentacao_atualizada.md?raw'
+import { parseSecoes, palavrasChave, type Secao } from '../lib/glossario'
 import { getAllQuestions } from '../data/loadQuestions'
 import { MODULO_LABEL } from '../types'
 import type { Questao } from '../types'
@@ -22,9 +23,12 @@ function questoesRelacionadas(tituloSecao: string, corpo: string, questoes: Ques
     .map((p) => p.q)
 }
 
-export default function Revisao() {
-  const secoes = useMemo(() => parseSecoes(glossarioRaw), [])
-  const questoes = useMemo(() => getAllQuestions(), [])
+interface AbaConteudoProps {
+  secoes: Secao[]
+  questoes: Questao[]
+}
+
+function AbaConteudo({ secoes, questoes }: AbaConteudoProps) {
   const [ativo, setAtivo] = useState(secoes[0]?.slug ?? '')
 
   return (
@@ -72,6 +76,56 @@ export default function Revisao() {
           )
         })}
       </div>
+    </div>
+  )
+}
+
+type Aba = 'glossario' | 'regulatorio'
+
+export default function Revisao() {
+  const [aba, setAba] = useState<Aba>('glossario')
+  const secoesGlossario = useMemo(() => parseSecoes(glossarioRaw), [])
+  const secoesRegulatorio = useMemo(() => parseSecoes(regulamentacaoRaw), [])
+  const questoes = useMemo(() => getAllQuestions(), [])
+
+  return (
+    <div className="flex flex-col gap-4">
+      <div className="flex gap-1 border-b border-slate-200">
+        <button
+          onClick={() => setAba('glossario')}
+          className={`rounded-t-md px-4 py-2 text-sm font-medium ${
+            aba === 'glossario' ? 'border-b-2 border-slate-900 text-slate-900' : 'text-slate-500 hover:text-slate-700'
+          }`}
+        >
+          Glossário
+        </button>
+        <button
+          onClick={() => setAba('regulatorio')}
+          className={`rounded-t-md px-4 py-2 text-sm font-medium ${
+            aba === 'regulatorio' ? 'border-b-2 border-slate-900 text-slate-900' : 'text-slate-500 hover:text-slate-700'
+          }`}
+        >
+          Atualizações Regulatórias (2023)
+        </button>
+      </div>
+
+      {aba === 'regulatorio' && (
+        <div className="rounded-md border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
+          <p className="font-medium">⚠️ Leia com cautela</p>
+          <p className="mt-1">
+            A existência e o texto das normas abaixo (Res. BCB 285/2023, 216/2023 e 155/2021) foram
+            verificados em fontes oficiais. Já a hipótese de que elas caem especificamente nesta prova
+            é especulação baseada em relato informal de terceiro — trate como material de reforço, não
+            como garantia do que será cobrado.
+          </p>
+        </div>
+      )}
+
+      {aba === 'glossario' ? (
+        <AbaConteudo secoes={secoesGlossario} questoes={questoes} />
+      ) : (
+        <AbaConteudo secoes={secoesRegulatorio} questoes={questoes} />
+      )}
     </div>
   )
 }

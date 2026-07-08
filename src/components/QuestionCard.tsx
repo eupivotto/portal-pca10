@@ -27,8 +27,16 @@ export default function QuestionCard({
   return (
     <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
       <div className="mb-3 flex items-center justify-between text-sm text-slate-500">
-        <span>
+        <span className="flex items-center gap-2">
           Questão {numero} de {total} · <span className="font-medium">{MODULO_LABEL[questao.modulo]}</span>
+          {questao.tipo === 'questao_original_ia' && (
+            <span
+              title="Questão de prática gerada por IA, baseada em lei vigente — não extraída de prova ou curso real"
+              className="rounded bg-violet-100 px-1.5 py-0.5 text-xs font-medium text-violet-700"
+            >
+              prática extra · IA
+            </span>
+          )}
         </span>
         {onToggleMarcada && (
           <button

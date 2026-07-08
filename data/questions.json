@@ -1,7 +1,7 @@
 {
   "meta": {
     "certificacao": "PCA-10 (ABAC)",
-    "total_questoes": 90,
+    "total_questoes": 109,
     "modulos": [
       "etica",
       "legislacao",
@@ -1451,6 +1451,329 @@
       "fonte_arquivo": "QUESTÕES_SOBRE_CÁLCULOS.pdf",
       "vezes_respondida": 0,
       "vezes_correta": 0
+    },
+    {
+      "modulo": "etica",
+      "enunciado": "Um cliente pergunta ao vendedor se ele pode garantir que será contemplado até o final do ano. A postura correta do vendedor é:",
+      "opcoes": {
+        "a": "Garantir a contemplação para fechar a venda mais rápido.",
+        "b": "Explicar que a contemplação ocorre por sorteio ou lance e não pode ser garantida por ninguém, nem pela administradora.",
+        "c": "Dizer que 'normalmente' todo mundo é contemplado rápido, sem entrar em detalhes.",
+        "d": "Evitar responder e mudar de assunto."
+      },
+      "gabarito": "b",
+      "explicacao": "Nenhum vendedor ou administradora pode garantir contemplação — ela depende de sorteio ou lance vencedor em assembleia.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 91,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "etica",
+      "enunciado": "Segundo a Resolução BCB nº 155/2021, o consorciado deve ser tratado, para fins de conduta e transparência, como:",
+      "opcoes": {
+        "a": "Um investidor.",
+        "b": "Um cliente.",
+        "c": "Um sócio da administradora.",
+        "d": "Um credor."
+      },
+      "gabarito": "b",
+      "explicacao": "A Resolução 155/2021, §2º, considera o consorciado como 'cliente' para fins de aplicação das regras de conduta.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 92,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "etica",
+      "enunciado": "Ao apresentar os custos de um plano de consórcio na adesão, o vendedor deve informar a taxa de administração, o fundo de reserva e o seguro (se houver) preferencialmente:",
+      "opcoes": {
+        "a": "Apenas em valor fixo mensal, sem percentual.",
+        "b": "Como percentual sobre o valor do crédito, considerando o total dos pagamentos previstos.",
+        "c": "Somente se o cliente perguntar diretamente.",
+        "d": "De forma genérica, sem discriminar cada item."
+      },
+      "gabarito": "b",
+      "explicacao": "A Resolução 155/2021 exige que os custos sejam expressos como percentual sobre o valor do crédito, de forma clara ao cliente.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 93,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "etica",
+      "enunciado": "Um vendedor percebe que um cliente idoso está com dificuldade de entender as condições do contrato. A conduta mais alinhada às boas práticas é:",
+      "opcoes": {
+        "a": "Seguir o roteiro padrão de vendas sem ajustes, pois todos os clientes recebem o mesmo tratamento.",
+        "b": "Considerar o perfil e a vulnerabilidade do cliente, dedicando mais tempo e clareza na explicação.",
+        "c": "Pedir para outra pessoa da família assinar no lugar dele.",
+        "d": "Encerrar o atendimento e sugerir que ele volte outro dia sozinho."
+      },
+      "gabarito": "b",
+      "explicacao": "A Resolução 155/2021 exige tratamento justo e equitativo considerando perfis e vulnerabilidades dos clientes.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 94,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "etica",
+      "enunciado": "Durante a venda, o cliente questiona por que o valor total do contrato é maior que o valor do crédito contratado. A resposta ética e correta é:",
+      "opcoes": {
+        "a": "Dizer que é 'só uma taxa administrativa pequena, não importa'.",
+        "b": "Explicar que o total inclui taxa de administração e, se houver, fundo de reserva e seguro, detalhando cada item.",
+        "c": "Evitar detalhar e dizer que 'é assim em todo consórcio'.",
+        "d": "Afirmar que não há diferença entre o total do contrato e o crédito."
+      },
+      "gabarito": "b",
+      "explicacao": "Transparência exige explicar exatamente a composição do valor total, item por item.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 95,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "etica",
+      "enunciado": "Um colega de trabalho sugere que, para fechar mais vendas, é aceitável omitir do cliente a possibilidade de lance embutido reduzir o crédito líquido recebido. Essa conduta é:",
+      "opcoes": {
+        "a": "Aceitável, pois lance embutido é um detalhe técnico irrelevante.",
+        "b": "Inadequada, pois omite informação relevante para a decisão do cliente.",
+        "c": "Aceitável, desde que a venda seja fechada.",
+        "d": "Uma prática comum e, portanto, correta."
+      },
+      "gabarito": "b",
+      "explicacao": "Omitir informação relevante fere o dever de transparência e o direito do cliente de decidir informado.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 96,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "etica",
+      "enunciado": "Em relação ao Código de Defesa do Consumidor, a publicidade enganosa sobre prazos de contemplação:",
+      "opcoes": {
+        "a": "É permitida se ajudar a fechar mais vendas.",
+        "b": "É vedada, pois induz o consumidor a erro sobre uma característica essencial do produto.",
+        "c": "É permitida desde que o cliente não reclame.",
+        "d": "Só é vedada em campanhas de TV, não em conversas de vendedor."
+      },
+      "gabarito": "b",
+      "explicacao": "O CDC veda publicidade enganosa (art. 37) — incluindo promessas de prazo de contemplação, que depende de sorteio/lance.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 97,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "etica",
+      "enunciado": "Sobre conflito de interesses na venda de consórcio, é correto afirmar que o vendedor deve:",
+      "opcoes": {
+        "a": "Priorizar sempre a comissão mais alta, independentemente do perfil do cliente.",
+        "b": "Recomendar o plano mais adequado ao perfil e à necessidade do cliente, mesmo que gere comissão menor.",
+        "c": "Empurrar planos de maior valor para aumentar a comissão.",
+        "d": "Ignorar o perfil do cliente, pois todos os planos são iguais."
+      },
+      "gabarito": "b",
+      "explicacao": "Boas práticas e a Resolução 155/2021 exigem adequação da oferta ao perfil e necessidade do cliente (suitability), não à comissão do vendedor.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 98,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "etica",
+      "enunciado": "Um cliente pede para o vendedor 'dar um jeitinho' de furar a fila de contemplação. A resposta correta do vendedor é:",
+      "opcoes": {
+        "a": "Aceitar, pois isso fideliza o cliente.",
+        "b": "Explicar que a contemplação segue regras de isonomia entre todos os consorciados e não pode ser burlada.",
+        "c": "Cobrar uma taxa extra 'por fora' para agilizar.",
+        "d": "Dizer que vai tentar, sem garantir nada, para não desagradar o cliente."
+      },
+      "gabarito": "b",
+      "explicacao": "A isonomia entre consorciados é princípio central da Lei 11.795/08 — nenhum favorecimento individual é permitido.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 99,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "etica",
+      "enunciado": "A postura de um profissional de vendas de consórcio diante de uma reclamação de cliente sobre cobrança deve ser:",
+      "opcoes": {
+        "a": "Ignorar até o cliente desistir de reclamar.",
+        "b": "Investigar a cobrança, explicar com transparência e, se houver erro, buscar a correção junto à administradora.",
+        "c": "Culpar o sistema da administradora e não se envolver.",
+        "d": "Pedir para o cliente resolver diretamente com o banco."
+      },
+      "gabarito": "b",
+      "explicacao": "Diligência e responsabilidade no relacionamento com o cliente incluem investigar e resolver reclamações, não desviar delas.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 100,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "processos",
+      "enunciado": "Segundo a Resolução BCB nº 285/2023, um consorciado não contemplado pode ser excluído do grupo por inadimplência recorrente quando deixar de pagar:",
+      "opcoes": {
+        "a": "1 vencimento.",
+        "b": "2 vencimentos.",
+        "c": "3 vencimentos.",
+        "d": "6 vencimentos."
+      },
+      "gabarito": "c",
+      "explicacao": "A Resolução BCB 285/2023 fixa em 3 vencimentos em atraso o critério de inadimplência recorrente que autoriza a exclusão.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 101,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "processos",
+      "enunciado": "Na data da última Assembleia Geral Ordinária de um grupo, o consorciado não contemplado que estiver inadimplente em até quantos vencimentos ainda pode ser excluído, segundo a Resolução BCB nº 285/2023?",
+      "opcoes": {
+        "a": "1 vencimento.",
+        "b": "2 vencimentos.",
+        "c": "4 vencimentos.",
+        "d": "Não há exclusão possível na última assembleia."
+      },
+      "gabarito": "b",
+      "explicacao": "Na última AGO do grupo, a inadimplência de até 2 vencimentos já é suficiente para caracterizar a exclusão, segundo a Resolução BCB 285/2023.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 102,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "processos",
+      "enunciado": "Segundo a Resolução BCB nº 285/2023, as assembleias de um grupo de consórcio podem ser realizadas:",
+      "opcoes": {
+        "a": "Somente de forma presencial.",
+        "b": "Somente de forma virtual.",
+        "c": "De forma presencial, virtual ou por outros meios que assegurem a participação dos consorciados.",
+        "d": "Apenas por meio de procuração, sem reunião real."
+      },
+      "gabarito": "c",
+      "explicacao": "A norma atual admite formatos presencial, virtual ou outros meios equivalentes, desde que assegurada a participação.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 103,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "legislacao",
+      "enunciado": "Sobre a aplicação dos recursos do grupo de consórcio, segundo a Resolução BCB nº 285/2023, é CORRETO afirmar que:",
+      "opcoes": {
+        "a": "Podem ser aplicados livremente em qualquer fundo de investimento, a critério da administradora.",
+        "b": "Devem ser aplicados em investimentos de baixo risco, como títulos públicos federais ou fundos de renda fixa específicos, sendo vedada a aplicação em fundos exclusivos ou onde a própria administradora tenha recursos aplicados.",
+        "c": "Podem ser aplicados em fundos de ações, desde que aprovado em assembleia.",
+        "d": "Não há nenhuma restrição sobre onde os recursos podem ser aplicados."
+      },
+      "gabarito": "b",
+      "explicacao": "A norma exige aplicação em investimentos de baixo risco e veda expressamente fundos exclusivos, para investidores qualificados, ou onde a administradora tenha recursos próprios aplicados — para evitar conflito de interesse.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 104,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "legislacao",
+      "enunciado": "Para fins de controle contábil dos recursos do grupo, a Resolução BCB nº 285/2023 exige que a administradora mantenha:",
+      "opcoes": {
+        "a": "Apenas um controle mensal consolidado de todo o sistema.",
+        "b": "Controle diário dos recursos, com identificação analítica por grupo e por consorciado.",
+        "c": "Controle apenas na data de cada assembleia.",
+        "d": "Nenhum controle formal é exigido, apenas boa-fé."
+      },
+      "gabarito": "b",
+      "explicacao": "A norma exige controle diário e analítico (por grupo e por consorciado individualmente), aumentando a rastreabilidade dos recursos.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 105,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "legislacao",
+      "enunciado": "Segundo o Art. 33 da Resolução BCB nº 285/2023 (com redação da Res. 216/2023), o crédito parcial devido a um consorciado CONTEMPLADO que foi excluído deve ser calculado com base:",
+      "opcoes": {
+        "a": "No valor original do bem na data da contemplação, sem qualquer atualização.",
+        "b": "No percentual amortizado aplicado sobre o valor ATUALIZADO do bem/serviço, deduzidas as obrigações financeiras pendentes, inclusive multas.",
+        "c": "Apenas na soma das parcelas pagas ao fundo comum, sem considerar reajuste do bem.",
+        "d": "No valor integral do crédito original, sem qualquer dedução."
+      },
+      "gabarito": "b",
+      "explicacao": "A norma vigente (diferente da antiga Circular 3.432/2009) usa o valor ATUALIZADO do bem — não o original — multiplicado pelo % amortizado, com deduções de pendências e multas.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 106,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "calculos",
+      "enunciado": "Marcos foi contemplado em consórcio de imóvel com crédito original de R$300.000,00, disponibilizado integralmente. Por reajuste do índice do bem, o valor atualizado do imóvel na data de sua exclusão está em R$330.000,00. Marcos havia amortizado 40% do fundo comum até a exclusão, sem outras pendências. Qual o valor do crédito parcial a que ele tem direito, segundo o Art. 33 da Resolução BCB 285/2023?",
+      "opcoes": {
+        "a": "R$120.000,00 (40% do valor original).",
+        "b": "R$300.000,00 (valor integral do crédito original).",
+        "c": "R$132.000,00 (40% do valor atualizado do bem).",
+        "d": "R$198.000,00 (60% do valor atualizado do bem)."
+      },
+      "gabarito": "c",
+      "explicacao": "Crédito parcial = % amortizado × valor ATUALIZADO do bem = 40% × 330.000 = R$132.000,00 (não o valor original de R$300.000).",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 107,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "legislacao",
+      "enunciado": "Ainda sobre o caso de Marcos (crédito original R$300.000,00; crédito parcial apurado de R$132.000,00), o que acontece com a diferença de R$168.000,00 entre esses valores, segundo o Art. 33?",
+      "opcoes": {
+        "a": "É retida integralmente pela administradora como lucro.",
+        "b": "É perdida, não sendo destinada a ninguém.",
+        "c": "Retorna ao fundo comum do grupo, acrescida dos rendimentos financeiros gerados no período entre a disponibilização do crédito e a exclusão.",
+        "d": "É dividida igualmente entre a administradora e o consorciado excluído."
+      },
+      "gabarito": "c",
+      "explicacao": "A diferença volta ao fundo comum do grupo (benefício dos demais consorciados), acrescida dos rendimentos financeiros do período.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 108,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "modulo": "legislacao",
+      "enunciado": "Sobre a multa rescisória prevista no Art. 32-A da Resolução BCB nº 285/2023 (dispositivo introduzido pela Res. 216/2023), é CORRETO afirmar que:",
+      "opcoes": {
+        "a": "Pode incidir sobre o valor total do crédito original do consorciado, sem limites.",
+        "b": "Se cobrada em percentual, incide exclusivamente sobre o crédito parcial a ser restituído; se em valor fixo, não pode igualar ou exceder esse crédito parcial; e tem como teto o valor da taxa de administração restante que seria recebida até o fim do grupo.",
+        "c": "Pode ser cobrada a qualquer momento após a exclusão, independentemente da contemplação.",
+        "d": "Não possui nenhum limite de valor, sendo definida livremente pela administradora."
+      },
+      "gabarito": "b",
+      "explicacao": "A multa rescisória tem múltiplos limites: incidência restrita ao crédito parcial, teto no valor da TX de administração remanescente, e só é cobrada no momento da contemplação do excluído.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "id": 109,
+      "tipo": "questao_original_ia"
     }
   ]
 }

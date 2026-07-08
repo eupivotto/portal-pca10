@@ -12,6 +12,8 @@ export interface Questao {
   fonte_arquivo: string
   vezes_respondida: number
   vezes_correta: number
+  /** Presente apenas em questões geradas por IA como prática extra, não extraídas de prova/curso real. */
+  tipo?: 'questao_original_ia'
 }
 
 export interface QuestionsFile {

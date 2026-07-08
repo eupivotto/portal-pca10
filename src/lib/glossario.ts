@@ -11,6 +11,13 @@ const STOPWORDS = new Set([
   'que', 'se', 'ao', 'no', 'na', 'nos', 'nas', 'um', 'uma', 'como', 'seu', 'sua', 'ser', 'não',
 ])
 
+function limparLinha(linha: string): string {
+  return linha
+    .replace(/^#{1,6}\s+/, '')
+    .replace(/\*\*(.+?)\*\*/g, '$1')
+    .replace(/^-\s+/, '• ')
+}
+
 export function parseSecoes(markdown: string): Secao[] {
   const linhas = markdown.split('\n')
   const secoes: Secao[] = []
@@ -19,9 +26,10 @@ export function parseSecoes(markdown: string): Secao[] {
     const match = linha.match(/^##\s+(.+)$/)
     if (match) {
       if (atual) secoes.push(atual)
-      atual = { titulo: match[1].trim(), slug: slugify(match[1].trim()), corpo: '' }
+      const titulo = limparLinha(match[1].trim())
+      atual = { titulo, slug: slugify(titulo), corpo: '' }
     } else if (atual && !linha.startsWith('# ') && !linha.startsWith('>')) {
-      atual.corpo += linha + '\n'
+      atual.corpo += limparLinha(linha) + '\n'
     }
   }
   if (atual) secoes.push(atual)

@@ -42,11 +42,61 @@ devolvido ao final — é remuneração da seguradora.
 ## Valor de Categoria
 CATEGORIA = CARTA DE CRÉDITO + TAXA ADM + FUNDO DE RESERVA
 
+Categoria é o "pacote completo" que o consorciado paga — não é só o valor do bem.
+Ela soma três partes:
+- **Carta de Crédito**: o valor que o consorciado vai usar para comprar o bem/serviço
+  quando for contemplado (é o "crédito" propriamente dito).
+- **Taxa de Administração**: quanto a administradora cobra pelo serviço (ver seção acima).
+- **Fundo de Reserva**: o "seguro" do grupo contra inadimplência (ver seção acima).
+
 ## Cálculo de Parcela
-PMT = (CC + TX + FR) / PZ  (+ SP opcional, calculado sobre o valor da categoria)
+**PMT = (CC + TX + FR) / PZ** (+ SP opcional, calculado sobre o valor da categoria)
+
+O que cada sigla significa:
+- **PMT** (do inglês *payment* — é o mesmo termo usado em calculadora financeira HP-12C):
+  o valor da parcela mensal que o consorciado paga.
+- **CC**: Carta de Crédito (valor do crédito a ser usado na compra do bem).
+- **TX**: Taxa de Administração (em valor, não em %, já convertida para R$).
+- **FR**: Fundo de Reserva (em valor, em R$).
+- **PZ**: Prazo — número total de meses do grupo/plano contratado.
+- **SP** (opcional): Seguro Prestamista — se o consorciado contratou, entra como um
+  valor adicional, calculado em % sobre o valor da categoria, somado à parcela final.
+
+Ou seja: a fórmula pega tudo que forma a Categoria (CC + TX + FR) e divide pelo
+número de meses do prazo (PZ) para chegar na parcela mensal. O Seguro Prestamista
+(SP), quando existe, é somado depois, por fora dessa divisão.
+
+**Exemplo prático**: Categoria de R$ 100.000 (CC = R$ 90.000, TX = R$ 8.000, FR = R$ 2.000),
+prazo de 80 meses, sem seguro prestamista:
+PMT = (90.000 + 8.000 + 2.000) / 80 = 100.000 / 80 = **R$ 1.250,00/mês**
+
+## Percentual Mensal (Fundo Comum)
+**% mensal = 1 / Prazo (em meses)**
+
+É o percentual da Categoria que é amortizado a cada mês, considerando apenas o
+prazo total do contrato — não importa quantas parcelas já foram pagas, nem se há
+parcelas em atraso. A lógica: se o grupo precisa quitar 100% da categoria ao longo
+de todo o prazo, em parcelas iguais, cada mês corresponde a "1 parte" desse total.
+
+⚠️ Questões desse tipo costumam incluir dados extras (parcelas já pagas, atrasos,
+inadimplência) só para testar se você sabe que eles **não entram nessa fórmula**.
+
+**Exemplo**: contrato de 60 meses → % mensal = 1/60 = **1,67% ao mês**.
+(Não importa se o consorciado já pagou 16, 30 ou 50 parcelas, nem se está em
+atraso — o percentual mensal do fundo comum é sempre 1/prazo.)
 
 ## Saldo Devedor
-SD = Valor Categoria − (PMT × parcelas pagas) − % Lance
+**SD = Valor Categoria − (PMT × parcelas pagas) − % Lance**
+
+- **SD**: Saldo Devedor — quanto ainda falta pagar da Categoria.
+- **Valor Categoria**: o mesmo total explicado acima (CC + TX + FR).
+- **PMT × parcelas pagas**: quanto já foi amortizado (pago) até agora.
+- **% Lance**: se o consorciado deu um lance para se contemplar, o valor ofertado
+  no lance também abate do saldo devedor.
+
+**Exemplo**: Categoria de R$ 100.000, já pagou 20 parcelas de R$ 1.250 (= R$ 25.000)
+e não deu lance:
+SD = 100.000 − 25.000 − 0 = **R$ 75.000**
 
 ## Reajuste da Carta de Crédito
 Pode ser mensal/anual/outro período definido em contrato; pode ter "trava"; referência
@@ -97,7 +147,17 @@ disponibilidade de valores. Recursos não procurados ficam à disposição do co
 excluído (tratamento contábil independente da administradora — não são incorporados).
 
 ## Custo Efetivo Total (CET)
-Custo = Σ PMTs pagas − Valor Emprestado (valor do crédito recebido)
+**Custo = Σ PMTs pagas − Valor Emprestado (valor do crédito recebido)**
+
+- **Σ** (letra grega sigma) é o símbolo de "somatório" — aqui significa "some todas
+  as parcelas (PMTs) já pagas até o momento".
+- **Valor Emprestado**: o valor da Carta de Crédito que o consorciado efetivamente
+  recebeu para comprar o bem (não é a Categoria inteira, é só o crédito líquido).
+
+Ou seja: CET mostra quanto o consórcio "custou de verdade" — soma tudo que já foi
+pago em parcelas e subtrai o valor do crédito que foi recebido. Se o resultado for
+positivo, o consorciado pagou mais do que recebeu (o que é esperado, já que taxa
+de administração e fundo de reserva estão embutidos nas parcelas).
 
 > A partir daqui: base legal extraída da **Lei nº 11.795/2008** (Lei do Sistema de
 > Consórcios), fonte oficial citada no edital ABAC para o módulo "Objetivos e

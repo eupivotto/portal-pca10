@@ -25,14 +25,14 @@ export default function QuestionCard({
   onToggleMarcada,
 }: Props) {
   return (
-    <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-      <div className="mb-3 flex items-center justify-between text-sm text-slate-500">
+    <div className="rounded-lg border border-rule bg-paper p-5 shadow-sm">
+      <div className="mb-3 flex items-center justify-between text-sm text-ink-soft">
         <span className="flex items-center gap-2">
           Questão {numero} de {total} · <span className="font-medium">{MODULO_LABEL[questao.modulo]}</span>
           {questao.tipo === 'questao_original_ia' && (
             <span
               title="Questão de prática gerada por IA, baseada em lei vigente — não extraída de prova ou curso real"
-              className="rounded bg-violet-100 px-1.5 py-0.5 text-xs font-medium text-violet-700"
+              className="rounded bg-accent-soft px-1.5 py-0.5 text-xs font-medium text-accent-ink"
             >
               prática extra · IA
             </span>
@@ -42,7 +42,7 @@ export default function QuestionCard({
           <button
             onClick={onToggleMarcada}
             className={`rounded px-2 py-1 text-xs font-medium ${
-              marcada ? 'bg-amber-100 text-amber-700' : 'text-slate-400 hover:bg-slate-100'
+              marcada ? 'bg-warn-soft text-warn-ink' : 'text-ink-soft hover:bg-accent-soft hover:text-accent-ink'
             }`}
           >
             {marcada ? '★ Marcada' : '☆ Marcar p/ revisão'}
@@ -54,12 +54,12 @@ export default function QuestionCard({
         {LETRAS.map((letra) => {
           const isSelected = respostaSelecionada === letra
           const isCorrect = questao.gabarito === letra
-          let classes = 'border-slate-200 hover:border-slate-400'
+          let classes = 'border-rule hover:border-rule-strong'
           if (respostaConfirmada) {
-            if (isCorrect) classes = 'border-green-500 bg-green-50'
-            else if (isSelected) classes = 'border-red-500 bg-red-50'
+            if (isCorrect) classes = 'border-accent bg-accent-soft'
+            else if (isSelected) classes = 'border-danger bg-danger-soft'
           } else if (isSelected) {
-            classes = 'border-slate-900 bg-slate-100'
+            classes = 'border-ink bg-accent-soft'
           }
           return (
             <button
@@ -75,7 +75,7 @@ export default function QuestionCard({
         })}
       </div>
       {respostaConfirmada && (
-        <div className="mt-4 rounded-md bg-slate-50 p-3 text-sm text-slate-700">
+        <div className="mt-4 rounded-md bg-canvas p-3 text-sm text-ink-soft">
           <p className="mb-1 font-medium">
             {respostaSelecionada === questao.gabarito ? '✅ Correto' : '❌ Incorreto'} — gabarito: {questao.gabarito.toUpperCase()}
           </p>

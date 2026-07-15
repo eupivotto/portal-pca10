@@ -62,6 +62,15 @@ const FORMULAS: Formula[] = [
     linhas: ['Custo = Σ PMTs pagas − Valor Emprestado (CC recebido)'],
     nota: 'Σ = somatório de todas as parcelas já pagas.',
   },
+  {
+    numero: 8,
+    titulo: 'Crédito parcial na exclusão (Art. 33, Res. BCB 285/2023)',
+    linhas: ['Crédito parcial = % amortizado do fundo comum × Valor ATUALIZADO do bem'],
+    nota: 'Vale para contemplado excluído do grupo: o direito é proporcional ao que foi amortizado, aplicado sobre o valor do bem na data da exclusão.',
+    exemploLabel: 'Exemplo — Marcos',
+    exemplo: 'Amortizado = 40% · Valor atualizado do imóvel = 330.000 → Crédito parcial = 0,40 × 330.000 = R$ 132.000,00',
+    armadilha: 'Usa o valor ATUALIZADO do bem na data da exclusão, não o valor original do crédito contratado (300.000 é uma pegadinha).',
+  },
 ]
 
 const COMPARATIVO = [

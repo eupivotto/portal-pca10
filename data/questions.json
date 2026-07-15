@@ -1,7 +1,7 @@
 {
   "meta": {
     "certificacao": "PCA-10 (ABAC)",
-    "total_questoes": 109,
+    "total_questoes": 129,
     "modulos": [
       "etica",
       "legislacao",
@@ -1773,6 +1773,346 @@
       "vezes_respondida": 0,
       "vezes_correta": 0,
       "id": 109,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 110,
+      "modulo": "calculos",
+      "enunciado": "Renata contratou um consórcio com crédito de R$ 50.000,00, prazo de 60 meses, TX de 8% e FR de 2%. Qual o valor da parcela mensal (sem seguro)?",
+      "opcoes": {
+        "a": "R$ 916,67.",
+        "b": "R$ 833,33.",
+        "c": "R$ 1.000,00.",
+        "d": "R$ 550,00."
+      },
+      "gabarito": "a",
+      "explicacao": "CAT = 50.000 × (1 + 0,08 + 0,02) = 50.000 × 1,10 = 55.000. PMT = 55.000 / 60 = R$ 916,67.",
+      "fonte_arquivo": "simulado_extra_05_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 111,
+      "modulo": "calculos",
+      "enunciado": "Consórcio de trator, 40 parcelas de R$ 600,00. TX 10%, FR 10%. Qual o valor do crédito?",
+      "opcoes": {
+        "a": "R$ 24.000,00.",
+        "b": "R$ 18.000,00.",
+        "c": "R$ 20.000,00.",
+        "d": "R$ 28.800,00."
+      },
+      "gabarito": "c",
+      "explicacao": "CAT = 600 × 40 = 24.000. Fator = 1 + 0,10 + 0,10 = 1,2. Crédito = 24.000 / 1,2 = R$ 20.000,00.",
+      "fonte_arquivo": "simulado_extra_05_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 112,
+      "modulo": "calculos",
+      "enunciado": "Sérgio contratou um crédito (CC) de R$ 250.000,00 e pagou R$ 27.500,00 de taxa de administração (TX) ao longo do plano. Qual o TX% sobre o crédito?",
+      "opcoes": {
+        "a": "11,00%.",
+        "b": "10,00%.",
+        "c": "9,17%.",
+        "d": "12,50%."
+      },
+      "gabarito": "a",
+      "explicacao": "TX% = TX (R$) / CC = 27.500 / 250.000 = 11%. O percentual é sempre fração do Crédito, não da Categoria.",
+      "fonte_arquivo": "simulado_extra_05_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 113,
+      "modulo": "calculos",
+      "enunciado": "Consórcio de imóvel com Categoria total (CAT) de R$ 132.000,00 e prazo de 60 meses. Qual a parcela mensal, sem considerar seguro?",
+      "opcoes": {
+        "a": "R$ 2.200,00.",
+        "b": "R$ 2.000,00.",
+        "c": "R$ 2.420,00.",
+        "d": "R$ 1.980,00."
+      },
+      "gabarito": "a",
+      "explicacao": "PMT = CAT / PZ = 132.000 / 60 = R$ 2.200,00.",
+      "fonte_arquivo": "simulado_extra_05_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 114,
+      "modulo": "calculos",
+      "enunciado": "Fernanda tem um consórcio com parcela cheia de R$ 1.500,00 em 48 meses. Já pagou 20 parcelas e não deu nenhum lance. Qual o saldo devedor (valor de quitação)?",
+      "opcoes": {
+        "a": "R$ 42.000,00.",
+        "b": "R$ 30.000,00.",
+        "c": "R$ 72.000,00.",
+        "d": "R$ 36.000,00."
+      },
+      "gabarito": "a",
+      "explicacao": "CAT = 1.500 × 48 = 72.000. Pago = 1.500 × 20 = 30.000. SD = 72.000 − 30.000 = R$ 42.000,00.",
+      "fonte_arquivo": "simulado_extra_05_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 115,
+      "modulo": "calculos",
+      "enunciado": "Um grupo de consórcio tem prazo de 75 meses. Qual o percentual mensal do fundo comum?",
+      "opcoes": {
+        "a": "1,33% a.m.",
+        "b": "1,25% a.m.",
+        "c": "1,50% a.m.",
+        "d": "0,75% a.m."
+      },
+      "gabarito": "a",
+      "explicacao": "% mensal = 1 / PZ = 1 / 75 = 1,33% ao mês. Não depende de parcelas pagas, só do prazo total.",
+      "fonte_arquivo": "simulado_extra_05_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 116,
+      "modulo": "calculos",
+      "enunciado": "Marcelo tem um consórcio com crédito de R$ 20.000,00, prazo de 60 meses, TX e FR de 10% cada. Pagou 12 parcelas e agora deseja mudar para uma carta de R$ 35.000,00, pagando a diferença das parcelas já vencidas à vista. Quanto ele deve desembolsar?",
+      "opcoes": {
+        "a": "R$ 3.600,00.",
+        "b": "R$ 15.000,00.",
+        "c": "R$ 2.400,00.",
+        "d": "R$ 7.200,00."
+      },
+      "gabarito": "a",
+      "explicacao": "Categoria antiga: 20.000 × 1,2 = 24.000 / 60 = 400/mês × 12 = 4.800 pago. Categoria nova: 35.000 × 1,2 = 42.000 / 60 = 700/mês × 12 = 8.400 deveria ter pago. Diferença: 8.400 − 4.800 = R$ 3.600,00.",
+      "fonte_arquivo": "simulado_extra_05_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 117,
+      "modulo": "calculos",
+      "enunciado": "Patrícia contratou um crédito (CC) de R$ 90.000,00 e pagará R$ 4.500,00 de fundo de reserva (FR) ao total. Qual o FR%?",
+      "opcoes": {
+        "a": "5,00%.",
+        "b": "4,50%.",
+        "c": "6,00%.",
+        "d": "10,00%."
+      },
+      "gabarito": "a",
+      "explicacao": "FR% = FR (R$) / CC = 4.500 / 90.000 = 5%.",
+      "fonte_arquivo": "simulado_extra_05_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 118,
+      "modulo": "calculos",
+      "enunciado": "Consórcio de van, 30 parcelas de R$ 2.000,00. TX 15%, FR 5%. Qual o valor do crédito?",
+      "opcoes": {
+        "a": "R$ 50.000,00.",
+        "b": "R$ 45.000,00.",
+        "c": "R$ 60.000,00.",
+        "d": "R$ 48.000,00."
+      },
+      "gabarito": "a",
+      "explicacao": "CAT = 2.000 × 30 = 60.000. Fator = 1 + 0,15 + 0,05 = 1,2. Crédito = 60.000 / 1,2 = R$ 50.000,00.",
+      "fonte_arquivo": "simulado_extra_05_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 119,
+      "modulo": "calculos",
+      "enunciado": "Roberta tem parcela cheia de R$ 800,00 em 72 meses. Pagou 30 parcelas e deu um lance que quitou 20% da Categoria. Qual o saldo devedor restante?",
+      "opcoes": {
+        "a": "R$ 22.080,00.",
+        "b": "R$ 33.600,00.",
+        "c": "R$ 11.520,00.",
+        "d": "R$ 45.600,00."
+      },
+      "gabarito": "a",
+      "explicacao": "CAT = 800 × 72 = 57.600. Pago em parcelas = 800 × 30 = 24.000. Lance = 20% × 57.600 = 11.520. SD = 57.600 − 24.000 − 11.520 = R$ 22.080,00.",
+      "fonte_arquivo": "simulado_extra_05_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 120,
+      "modulo": "calculos",
+      "enunciado": "Larissa foi contemplada em consórcio de veículo com crédito original de R$ 40.000,00. Na data de sua exclusão do grupo, o valor atualizado do bem estava em R$ 46.000,00. Larissa havia amortizado 25% do fundo comum. Qual o valor do crédito parcial a que tem direito, segundo o Art. 33 da Resolução BCB 285/2023?",
+      "opcoes": {
+        "a": "R$ 11.500,00.",
+        "b": "R$ 10.000,00.",
+        "c": "R$ 40.000,00.",
+        "d": "R$ 46.000,00."
+      },
+      "gabarito": "a",
+      "explicacao": "Crédito parcial = % amortizado × valor ATUALIZADO do bem = 25% × 46.000 = R$ 11.500,00 (não o valor original de 40.000).",
+      "fonte_arquivo": "simulado_extra_06_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 121,
+      "modulo": "calculos",
+      "enunciado": "Um cliente quer adquirir uma cota vaga em grupo de 80 meses, restando apenas 25 meses. Qual será sua amortização mensal?",
+      "opcoes": {
+        "a": "4,00% a.m.",
+        "b": "1,25% a.m.",
+        "c": "3,20% a.m.",
+        "d": "8,00% a.m."
+      },
+      "gabarito": "a",
+      "explicacao": "Cota vaga assume o prazo RESTANTE, não o prazo original do grupo. % mensal = 1 / prazo restante = 1 / 25 = 4,00% ao mês.",
+      "fonte_arquivo": "simulado_extra_06_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 122,
+      "modulo": "calculos",
+      "enunciado": "Rafael pagou, ao longo de seu consórcio, parcelas que somaram R$ 54.000,00 e recebeu um crédito de R$ 45.000,00 na contemplação. Qual o custo efetivo (CET) da operação, em reais?",
+      "opcoes": {
+        "a": "R$ 9.000,00.",
+        "b": "R$ 54.000,00.",
+        "c": "R$ 45.000,00.",
+        "d": "R$ 99.000,00."
+      },
+      "gabarito": "a",
+      "explicacao": "Custo = Σ PMTs pagas − Valor recebido = 54.000 − 45.000 = R$ 9.000,00.",
+      "fonte_arquivo": "simulado_extra_06_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 123,
+      "modulo": "calculos",
+      "enunciado": "Eduardo, contemplado em consórcio de imóvel com crédito original de R$ 500.000,00, foi excluído do grupo. O valor atualizado do imóvel na data da exclusão é R$ 560.000,00. Eduardo havia amortizado 55% do fundo comum. Qual o crédito parcial a que tem direito?",
+      "opcoes": {
+        "a": "R$ 308.000,00.",
+        "b": "R$ 275.000,00.",
+        "c": "R$ 500.000,00.",
+        "d": "R$ 560.000,00."
+      },
+      "gabarito": "a",
+      "explicacao": "Crédito parcial = 55% × valor atualizado (560.000) = R$ 308.000,00.",
+      "fonte_arquivo": "simulado_extra_06_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 124,
+      "modulo": "calculos",
+      "enunciado": "Um cliente quer adquirir cota vaga em grupo de 100 meses, restando 60 meses. Qual sua amortização mensal?",
+      "opcoes": {
+        "a": "1,67% a.m.",
+        "b": "1,00% a.m.",
+        "c": "0,60% a.m.",
+        "d": "6,00% a.m."
+      },
+      "gabarito": "a",
+      "explicacao": "% mensal = 1 / prazo restante = 1 / 60 = 1,67% ao mês.",
+      "fonte_arquivo": "simulado_extra_06_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 125,
+      "modulo": "calculos",
+      "enunciado": "Camila pagou, em parcelas, um total de R$ 28.000,00 e recebeu crédito de R$ 25.000,00 na contemplação. Qual o custo percentual (CET aproximado) sobre o crédito recebido?",
+      "opcoes": {
+        "a": "12,00%.",
+        "b": "10,71%.",
+        "c": "3,00%.",
+        "d": "15,00%."
+      },
+      "gabarito": "a",
+      "explicacao": "Custo = 28.000 − 25.000 = 3.000. % sobre o crédito recebido = 3.000 / 25.000 = 12%.",
+      "fonte_arquivo": "simulado_extra_06_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 126,
+      "modulo": "calculos",
+      "enunciado": "Diego, contemplado em consórcio de moto com crédito original de R$ 18.000,00, foi excluído do grupo. O valor atualizado da moto na data da exclusão é R$ 19.800,00. Diego havia amortizado 10% do fundo comum. Qual o crédito parcial a que tem direito?",
+      "opcoes": {
+        "a": "R$ 1.980,00.",
+        "b": "R$ 1.800,00.",
+        "c": "R$ 18.000,00.",
+        "d": "R$ 19.800,00."
+      },
+      "gabarito": "a",
+      "explicacao": "Crédito parcial = 10% × valor atualizado (19.800) = R$ 1.980,00.",
+      "fonte_arquivo": "simulado_extra_06_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 127,
+      "modulo": "calculos",
+      "enunciado": "Um cliente quer adquirir cota vaga em grupo de 48 meses, restando 12 meses. Qual sua amortização mensal?",
+      "opcoes": {
+        "a": "8,33% a.m.",
+        "b": "4,00% a.m.",
+        "c": "25,00% a.m.",
+        "d": "2,08% a.m."
+      },
+      "gabarito": "a",
+      "explicacao": "% mensal = 1 / prazo restante = 1 / 12 = 8,33% ao mês.",
+      "fonte_arquivo": "simulado_extra_06_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 128,
+      "modulo": "calculos",
+      "enunciado": "Vinícius contratou crédito (CC) de R$ 60.000,00, TX 10% e FR 10%, prazo de 60 meses. Foi contemplado logo no 1º mês e recebeu o crédito integral de imediato. Se pagar todas as 60 parcelas até o fim do plano, qual será o custo total (CET) da operação, em reais?",
+      "opcoes": {
+        "a": "R$ 12.000,00.",
+        "b": "R$ 72.000,00.",
+        "c": "R$ 60.000,00.",
+        "d": "R$ 6.000,00."
+      },
+      "gabarito": "a",
+      "explicacao": "CAT = 60.000 × 1,2 = 72.000 (o total que será pago em 60 parcelas). Custo = total pago − crédito recebido = 72.000 − 60.000 = R$ 12.000,00.",
+      "fonte_arquivo": "simulado_extra_06_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 129,
+      "modulo": "calculos",
+      "enunciado": "Beatriz, contemplada em consórcio de imóvel comercial com crédito original de R$ 700.000,00, foi excluída do grupo. O valor atualizado do imóvel na data da exclusão é R$ 770.000,00. Beatriz havia amortizado 30% do fundo comum. Qual o crédito parcial a que tem direito?",
+      "opcoes": {
+        "a": "R$ 231.000,00.",
+        "b": "R$ 210.000,00.",
+        "c": "R$ 700.000,00.",
+        "d": "R$ 770.000,00."
+      },
+      "gabarito": "a",
+      "explicacao": "Crédito parcial = 30% × valor atualizado (770.000) = R$ 231.000,00.",
+      "fonte_arquivo": "simulado_extra_06_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
       "tipo": "questao_original_ia"
     }
   ]

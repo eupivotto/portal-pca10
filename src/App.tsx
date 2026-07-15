@@ -2,6 +2,7 @@ import { NavLink, Route, Routes } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
 import Revisao from './pages/Revisao'
 import SimuladoCompleto from './pages/SimuladoCompleto'
+import SimuladosExtras from './pages/SimuladosExtras'
 import TreinoModulo from './pages/TreinoModulo'
 import QuestoesErro from './pages/QuestoesErro'
 import Formulas from './pages/Formulas'
@@ -12,6 +13,7 @@ const navItems = [
   { to: '/revisao', label: 'Revisão' },
   { to: '/formulas', label: 'Fórmulas' },
   { to: '/simulado', label: 'Simulado' },
+  { to: '/simulados-extras', label: 'Simulados extras' },
   { to: '/treino', label: 'Treino' },
   { to: '/erros', label: 'Meus erros' },
   { to: '/historico', label: 'Histórico' },
@@ -49,6 +51,7 @@ function App() {
           <Route path="/revisao" element={<Revisao />} />
           <Route path="/formulas" element={<Formulas />} />
           <Route path="/simulado" element={<SimuladoCompleto />} />
+          <Route path="/simulados-extras" element={<SimuladosExtras />} />
           <Route path="/treino" element={<TreinoModulo />} />
           <Route path="/erros" element={<QuestoesErro />} />
           <Route path="/historico" element={<Historico />} />

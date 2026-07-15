@@ -1,7 +1,7 @@
 {
   "meta": {
     "certificacao": "PCA-10 (ABAC)",
-    "total_questoes": 129,
+    "total_questoes": 160,
     "modulos": [
       "etica",
       "legislacao",
@@ -2111,6 +2111,533 @@
       "gabarito": "a",
       "explicacao": "Crédito parcial = 30% × valor atualizado (770.000) = R$ 231.000,00.",
       "fonte_arquivo": "simulado_extra_06_ia",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 130,
+      "modulo": "legislacao",
+      "enunciado": "Segundo a Lei 11.795/2008, a que compete ao Banco Central (BACEN) em relação às administradoras de consórcio?",
+      "opcoes": {
+        "a": "Apenas fiscalizar o pagamento de impostos das administradoras.",
+        "b": "Autorizar o funcionamento e a transferência de controle das administradoras, normatizar as operações, fiscalizar, aplicar sanções e decretar intervenção ou liquidação extrajudicial.",
+        "c": "Somente aprovar a criação de novos grupos de consórcio, sem poder de fiscalização.",
+        "d": "Nenhuma competência direta — a fiscalização é feita pelo Procon."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 6º e 7º da Lei 11.795/2008: o BACEN autoriza funcionamento e transferência de controle, aprova atos societários, normatiza, supervisiona, fixa penalidades, fiscaliza e pode decretar intervenção/liquidação extrajudicial.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 131,
+      "modulo": "legislacao",
+      "enunciado": "Sobre a natureza jurídica do grupo de consórcio (Art. 3º da Lei 11.795/2008), é correto afirmar que:",
+      "opcoes": {
+        "a": "O grupo é uma sociedade não personificada, com patrimônio próprio e autônomo, que não se comunica com o patrimônio da administradora.",
+        "b": "O grupo faz parte do patrimônio da administradora e responde por dívidas dela.",
+        "c": "Os bens do grupo podem ser penhorados por credores da administradora.",
+        "d": "O grupo só existe juridicamente após o encerramento de todas as contemplações."
+      },
+      "gabarito": "a",
+      "explicacao": "Art. 3º §3º e Art. 5º §5º: o grupo é sociedade não personificada com patrimônio próprio, autônomo e distinto da administradora — não se comunica com o patrimônio dela.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 132,
+      "modulo": "legislacao",
+      "enunciado": "O contrato de participação em consórcio (Art. 10 da Lei 11.795/2008) é classificado como:",
+      "opcoes": {
+        "a": "Instrumento plurilateral associativo que constitui um fundo pecuniário, aperfeiçoando-se na data de constituição do grupo.",
+        "b": "Contrato bilateral simples entre consorciado e administradora, sem relação com os demais participantes.",
+        "c": "Mero termo de intenção, sem força executiva mesmo após a contemplação.",
+        "d": "Documento que só produz efeitos após o encerramento total do grupo."
+      },
+      "gabarito": "a",
+      "explicacao": "O contrato de participação é instrumento plurilateral associativo (Art. 10); aperfeiçoa-se na constituição do grupo (1ª assembleia). O contrato do consorciado contemplado é título executivo extrajudicial.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 133,
+      "modulo": "legislacao",
+      "enunciado": "Qual das alternativas descreve corretamente o limite de participação de um mesmo consorciado em um grupo, segundo o Art. 15 da Lei 11.795/2008?",
+      "opcoes": {
+        "a": "Não há qualquer limite — um consorciado pode deter 100% das cotas do grupo.",
+        "b": "A participação é limitada a percentual de cotas fixado pelo BACEN.",
+        "c": "O limite é sempre de exatamente 10% das cotas, fixado por lei.",
+        "d": "O limite é definido livremente por cada administradora, sem qualquer norma superior."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 15: a participação de um mesmo consorciado é limitada a percentual de cotas fixado pelo BACEN.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 134,
+      "modulo": "legislacao",
+      "enunciado": "A própria administradora de consórcio pode adquirir cotas de um grupo sob sua administração?",
+      "opcoes": {
+        "a": "Não, é vedado em qualquer hipótese.",
+        "b": "Sim, mas só concorre ao sorteio depois que todos os demais consorciados já tiverem sido contemplados.",
+        "c": "Sim, e tem prioridade no sorteio sobre os demais consorciados.",
+        "d": "Sim, sem qualquer restrição quanto à ordem de contemplação."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 15: a administradora pode adquirir cotas do grupo que administra, mas só concorre a sorteio após todos os demais consorciados já terem sido contemplados.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 135,
+      "modulo": "legislacao",
+      "enunciado": "Segundo o Art. 16 da Lei 11.795/2008, quando o grupo de consórcio se considera constituído?",
+      "opcoes": {
+        "a": "Na data de assinatura do primeiro contrato de participação individual.",
+        "b": "Na data da realização da primeira assembleia (AGO inaugural), convocada quando há adesões suficientes para viabilidade econômico-financeira.",
+        "c": "Somente após a primeira contemplação por sorteio ou lance.",
+        "d": "Na data de publicação do regulamento do grupo no Diário Oficial."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 16: o grupo se constitui com a AGO inaugural, convocada quando há adesões suficientes para viabilidade econômico-financeira.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 136,
+      "modulo": "legislacao",
+      "enunciado": "De acordo com o Art. 17 da Lei 11.795/2008, quantos consorciados o grupo pode escolher para representá-lo perante a administradora, acompanhando a regularidade da gestão?",
+      "opcoes": {
+        "a": "Até 3, com mandato igual à duração do grupo.",
+        "b": "Exatamente 1, com mandato de 1 ano.",
+        "c": "Até 5, renovados a cada assembleia.",
+        "d": "Nenhum — a representação é sempre feita pela própria administradora."
+      },
+      "gabarito": "a",
+      "explicacao": "Art. 17: o grupo escolhe até 3 consorciados representantes, com mandato igual à duração do grupo.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 137,
+      "modulo": "legislacao",
+      "enunciado": "Sobre o voto em assembleia de consórcio (Art. 20 da Lei 11.795/2008), é correto afirmar que:",
+      "opcoes": {
+        "a": "Cada consorciado tem direito a 1 voto, independentemente do número de cotas que possui.",
+        "b": "Cada cota corresponde a um voto, e as deliberações são tomadas por maioria simples.",
+        "c": "As deliberações exigem unanimidade dos consorciados ativos.",
+        "d": "Apenas os consorciados contemplados podem votar."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 20: cada cota corresponde a um voto; deliberações por maioria simples. Representação por procuração é permitida (com regras específicas para AGO e AGE).",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 138,
+      "modulo": "legislacao",
+      "enunciado": "Segundo o Art. 21 da Lei 11.795/2008, qual consorciado NÃO é considerado \"ativo\"?",
+      "opcoes": {
+        "a": "O consorciado em dia com as prestações, ainda não contemplado.",
+        "b": "O consorciado já contemplado que continua pagando as parcelas normalmente.",
+        "c": "O consorciado inadimplente não contemplado e o consorciado excluído.",
+        "d": "O consorciado que deu lance mas não foi sorteado."
+      },
+      "gabarito": "c",
+      "explicacao": "Art. 21: consorciado ativo é quem mantém vínculo obrigacional com o grupo, EXCETO o inadimplente não contemplado e o excluído.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 139,
+      "modulo": "legislacao",
+      "enunciado": "Pela Lei 11.795/2008, a contemplação (Art. 22 e 23) fica condicionada a quê, e o valor do crédito corresponde a quê?",
+      "opcoes": {
+        "a": "Independe de recursos no fundo comum; o valor do crédito é sempre o valor contratado na adesão, sem atualização.",
+        "b": "À existência de recursos suficientes no fundo comum; o valor do crédito equivale ao valor do bem/serviço vigente na data da assembleia de contemplação, mais rendimentos financeiros líquidos proporcionais ao período de aplicação.",
+        "c": "Somente à realização de sorteio pela Loteria Federal, sem qualquer outra condição.",
+        "d": "À aprovação prévia do BACEN para cada contemplação individual."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 22 e 23: contemplação condicionada a recursos suficientes no fundo comum; valor do crédito = valor do bem/serviço na data da assembleia de contemplação + rendimentos financeiros líquidos proporcionais.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 140,
+      "modulo": "legislacao",
+      "enunciado": "O fundo comum de um grupo de consórcio (Art. 25 da Lei 11.795/2008) é constituído por quais recursos, e a que se destina?",
+      "opcoes": {
+        "a": "Apenas pelas prestações pagas; destina-se exclusivamente ao lucro da administradora.",
+        "b": "Pelas prestações pagas, por multas e juros moratórios destinados ao grupo, e pelos rendimentos da aplicação financeira; destina-se ao crédito dos contemplados e à restituição dos excluídos.",
+        "c": "Somente pelos rendimentos financeiros do capital da administradora.",
+        "d": "Pelas doações voluntárias de consorciados contemplados."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 25 e parágrafo único: fundo comum = prestações + multas/juros moratórios destinados ao grupo + rendimentos financeiros; destina-se ao crédito dos contemplados e à restituição dos excluídos.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 141,
+      "modulo": "legislacao",
+      "enunciado": "Sobre a destinação de multas e juros moratórios recebidos por inadimplência (Art. 28 da Lei 11.795/2008), o contrato:",
+      "opcoes": {
+        "a": "Pode destinar ao grupo qualquer percentual, inclusive 0%.",
+        "b": "Não pode destinar ao grupo percentual inferior a 50% — o restante fica com a administradora.",
+        "c": "Deve destinar 100% desses valores à administradora.",
+        "d": "Deve destinar 100% desses valores ao consorciado inadimplente."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 28: o contrato não pode destinar ao grupo percentual inferior a 50% das multas e juros moratórios — o restante fica com a administradora.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 142,
+      "modulo": "legislacao",
+      "enunciado": "Pela regra geral do Art. 30 da Lei 11.795/2008 (antes das mudanças trazidas pela Res. BCB 285/2023 para o contemplado excluído), a restituição ao consorciado EXCLUÍDO NÃO CONTEMPLADO é calculada sobre:",
+      "opcoes": {
+        "a": "O percentual amortizado do valor do bem/serviço vigente na data da CONTEMPLAÇÃO do grupo (não da exclusão), acrescido de rendimentos financeiros.",
+        "b": "O valor integral do crédito contratado, sem qualquer proporcionalidade.",
+        "c": "O percentual amortizado do valor do bem na data da EXCLUSÃO dele, sem rendimentos.",
+        "d": "Nenhum valor — o excluído não contemplado não tem direito a restituição."
+      },
+      "gabarito": "a",
+      "explicacao": "Art. 30: a restituição do excluído NÃO contemplado usa o valor do bem vigente na data da contemplação do grupo (não da exclusão dele), acrescido de rendimentos. Já o crédito parcial do excluído JÁ CONTEMPLADO segue a regra nova do Art. 33 da Res. BCB 285/2023 (valor atualizado do bem na data da exclusão).",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 143,
+      "modulo": "legislacao",
+      "enunciado": "Segundo o Art. 31 e 32 da Lei 11.795/2008, quais são os prazos para (1) comunicar aos não contemplados que os créditos estão à disposição e (2) o encerramento efetivo do grupo, ambos contados da última assembleia de contemplação?",
+      "opcoes": {
+        "a": "(1) 60 dias; (2) 120 dias, com prestação de contas definitiva.",
+        "b": "(1) 30 dias; (2) 60 dias.",
+        "c": "(1) 120 dias; (2) 60 dias.",
+        "d": "Não há prazo definido em lei — cada administradora define livremente."
+      },
+      "gabarito": "a",
+      "explicacao": "Art. 31: até 60 dias da última assembleia de contemplação para comunicar disponibilidade aos não contemplados. Art. 32: encerramento efetivo em até 120 dias, com prestação de contas definitiva.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 144,
+      "modulo": "legislacao",
+      "enunciado": "Qual o prazo de prescrição da pretensão do consorciado/excluído contra o grupo ou a administradora, segundo o Art. 32 §2º da Lei 11.795/2008?",
+      "opcoes": {
+        "a": "1 ano.",
+        "b": "2 anos.",
+        "c": "5 anos.",
+        "d": "10 anos."
+      },
+      "gabarito": "c",
+      "explicacao": "Art. 32 §2º: a pretensão do consorciado ou excluído contra o grupo ou a administradora prescreve em 5 anos.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 145,
+      "modulo": "legislacao",
+      "enunciado": "O que são os \"recursos não procurados\" (Art. 33 da Lei 11.795/2008) e qual o prazo para a administradora pagar o consorciado que comparece para recebê-los (Art. 38)?",
+      "opcoes": {
+        "a": "São valores emprestados a outros grupos; não há prazo específico de pagamento.",
+        "b": "São disponibilidades remanescentes após o encerramento do grupo; a administradora deve pagar em até 30 dias do comparecimento do interessado, podendo aplicar taxa de permanência sobre o saldo.",
+        "c": "São multas revertidas para o BACEN, sem relação com o consorciado.",
+        "d": "São valores que se incorporam automaticamente ao patrimônio da administradora após 1 ano."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 33: recursos não procurados são disponibilidades remanescentes após o encerramento do grupo (a administradora vira gestora, podendo cobrar taxa de permanência). Art. 38: pagamento em até 30 dias do comparecimento, com tratamento contábil independente da administradora.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 146,
+      "modulo": "processos",
+      "enunciado": "Qual a diferença entre \"consorciado\" e \"cotista\", segundo o glossário oficial da certificação PCA-10?",
+      "opcoes": {
+        "a": "Não há diferença, são sinônimos.",
+        "b": "Consorciado é quem comprou o consórcio para uso próprio; cotista é quem possui várias cartas de crédito e pode revendê-las.",
+        "c": "Cotista é quem já foi contemplado; consorciado é quem ainda não foi.",
+        "d": "Consorciado é pessoa jurídica; cotista é sempre pessoa física."
+      },
+      "gabarito": "b",
+      "explicacao": "Consorciado: adquire para uso próprio. Cotista: detém múltiplas cartas de crédito, com finalidade inclusive de revenda.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 147,
+      "modulo": "processos",
+      "enunciado": "Qual o prazo máximo que a administradora tem para formar um grupo de consórcio, segundo o glossário da certificação?",
+      "opcoes": {
+        "a": "30 dias.",
+        "b": "60 dias.",
+        "c": "90 dias.",
+        "d": "120 dias."
+      },
+      "gabarito": "c",
+      "explicacao": "A administradora tem até 90 dias para formar o grupo (fase de \"Formação\").",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 148,
+      "modulo": "processos",
+      "enunciado": "Quais são as formas de contemplação em um grupo de consórcio?",
+      "opcoes": {
+        "a": "Apenas sorteio, sempre pela Loteria Federal.",
+        "b": "Sorteio (geralmente pela Loteria Federal) ou Lance (Livre, Fixo, Embutido, FGTS — restrito a imóveis, ou de Quitação).",
+        "c": "Apenas lance, nunca sorteio.",
+        "d": "Ordem cronológica de adesão ao grupo, sem sorteio ou lance."
+      },
+      "gabarito": "b",
+      "explicacao": "Contemplação ocorre por Sorteio (Loteria Federal, geralmente) ou por Lance, nas modalidades Livre, Fixo, Embutido, FGTS (só para imóveis) ou de Quitação.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 149,
+      "modulo": "processos",
+      "enunciado": "O que caracteriza o \"Lance Embutido\" em um consórcio?",
+      "opcoes": {
+        "a": "É pago com recurso próprio adicional do consorciado, sem afetar o crédito líquido recebido.",
+        "b": "É ofertado com parte da própria carta de crédito, não exigindo recurso próprio adicional, mas reduzindo o crédito líquido recebido.",
+        "c": "Só pode ser usado por consorciados já contemplados por sorteio.",
+        "d": "É uma modalidade exclusiva para consórcios de serviços."
+      },
+      "gabarito": "b",
+      "explicacao": "O Lance Embutido usa parte da própria carta de crédito como oferta — não exige aporte externo, mas reduz o valor líquido de crédito que o consorciado recebe.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 150,
+      "modulo": "processos",
+      "enunciado": "O que é a \"Transferência de Cota\" e quais são motivos comuns para que ela ocorra?",
+      "opcoes": {
+        "a": "É a troca automática de administradora, sem envolvimento do consorciado.",
+        "b": "É a cessão da cota de um cedente a um cessionário, por motivos como desistência, incapacidade de pagamento, venda da cota ou venda do bem alienado (inclusive cotas já contempladas).",
+        "c": "Ocorre apenas quando o consorciado falece, sem outras hipóteses.",
+        "d": "É vedada em qualquer hipótese após a contemplação."
+      },
+      "gabarito": "b",
+      "explicacao": "Transferência de cota: cedente cede a um cessionário. Motivos comuns: desistência, incapacidade de pagamento, venda de cota, venda do bem alienado (mesmo já contemplada).",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 151,
+      "modulo": "processos",
+      "enunciado": "Qual a diferença entre consorciado \"Desistente\" e \"Excluído\", no cancelamento de um consórcio?",
+      "opcoes": {
+        "a": "São a mesma coisa, com nomes diferentes.",
+        "b": "Desistente cancela por vontade própria dentro do prazo de arrependimento de 7 dias; Excluído é o cancelamento espontâneo (fora do prazo) ou automático por inadimplência que fere a isonomia do grupo.",
+        "c": "Desistente é sempre por inadimplência; Excluído é sempre voluntário.",
+        "d": "Só existe a categoria \"Excluído\" — \"Desistente\" não é reconhecido oficialmente."
+      },
+      "gabarito": "b",
+      "explicacao": "Desistente: cancela por vontade própria dentro dos 7 dias de arrependimento. Excluído: manifestação espontânea fora desse prazo, ou exclusão automática por inadimplência que fere a isonomia do grupo.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 152,
+      "modulo": "processos",
+      "enunciado": "Após a última assembleia de contemplação, em quanto tempo a administradora deve comunicar a disponibilidade de valores aos consorciados, e o que ocorre com os recursos não procurados?",
+      "opcoes": {
+        "a": "Em até 60 dias; os recursos não procurados ficam à disposição do consorciado/excluído, com tratamento contábil independente da administradora.",
+        "b": "Em até 10 dias; os recursos são incorporados ao patrimônio da administradora.",
+        "c": "Não há prazo; os recursos somem automaticamente após 1 ano.",
+        "d": "Em até 1 ano; os recursos são divididos entre os demais consorciados do grupo."
+      },
+      "gabarito": "a",
+      "explicacao": "A administradora tem até 60 dias após a última assembleia de contemplação para comunicar a disponibilidade. Recursos não procurados ficam à disposição do consorciado/excluído, com tratamento contábil independente — não são incorporados pela administradora.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 153,
+      "modulo": "processos",
+      "enunciado": "Quais são os tipos de assembleia geral em um grupo de consórcio, e para que servem?",
+      "opcoes": {
+        "a": "AGO (inaugural e recorrente, para aferir lances e contemplações) e AGE (eventual, para descontinuidade de bem referência ou convocação de 30%+ dos consorciados ativos, ou por iniciativa da administradora).",
+        "b": "Apenas AGO, realizada uma única vez, na constituição do grupo.",
+        "c": "Apenas AGE, convocada mensalmente pela administradora.",
+        "d": "AGO e AGE têm exatamente a mesma finalidade e podem ser usadas indistintamente."
+      },
+      "gabarito": "a",
+      "explicacao": "AGO: inaugural (constitui o grupo) e recorrente (aferindo lances/contemplações periodicamente). AGE: eventual, por descontinuidade do bem referência, convocação de 30%+ dos consorciados ativos, ou iniciativa da administradora.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 154,
+      "modulo": "processos",
+      "enunciado": "Segundo a Resolução BCB nº 285/2023 (Art. 35), o que é exigido, simultaneamente, para o reingresso de um consorciado excluído no grupo?",
+      "opcoes": {
+        "a": "Apenas a manifestação de interesse, sem outras exigências.",
+        "b": "Manifestação expressa de interesse, disponibilidade de cotas no grupo, análise de capacidade de pagamento pela administradora, e negociação de débitos em atraso.",
+        "c": "Somente o pagamento integral de todas as dívidas pendentes, sem análise adicional.",
+        "d": "O reingresso é automático assim que surge uma vaga, sem qualquer análise da administradora."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 35: reingresso exige simultaneamente manifestação expressa de interesse, disponibilidade de cotas, análise de capacidade de pagamento pela administradora, e negociação de débitos em atraso (multas/juros podem ser dispensados a critério da administradora).",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 155,
+      "modulo": "processos",
+      "enunciado": "Segundo a Resolução BCB nº 285/2023, em quais fundos de investimento é PROIBIDO aplicar os recursos do grupo de consórcio?",
+      "opcoes": {
+        "a": "Em qualquer fundo de renda fixa, sem exceção.",
+        "b": "Em fundos exclusivos, fundos para investidores qualificados, ou fundos onde a própria administradora tenha recursos aplicados.",
+        "c": "Apenas em títulos públicos federais atrelados à Selic.",
+        "d": "Não há qualquer restrição — a administradora escolhe livremente onde aplicar."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 87 §3º: é proibido aplicar em fundos exclusivos, fundos para investidores qualificados, ou fundos onde a própria administradora tenha recursos aplicados. É exigida aplicação em investimentos de baixo risco (títulos públicos Selic ou fundos de renda fixa Curto Prazo/Referenciado/Simples).",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 156,
+      "modulo": "processos",
+      "enunciado": "Como deve ser feito o controle dos recursos do grupo de consórcio, segundo a Resolução BCB nº 285/2023 (Art. 86 §1º)?",
+      "opcoes": {
+        "a": "Controle anual, de forma consolidada entre todos os grupos administrados.",
+        "b": "Controle diário, com identificação analítica por grupo e por consorciado.",
+        "c": "Não há exigência de controle formal, apenas boa prática recomendada.",
+        "d": "Controle trimestral, apenas por grupo, sem detalhamento por consorciado."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 86 §1º: controle diário dos recursos, com identificação analítica por grupo e por consorciado.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 157,
+      "modulo": "processos",
+      "enunciado": "Sobre a realização de assembleias, segundo a Resolução BCB nº 285/2023, é correto afirmar que:",
+      "opcoes": {
+        "a": "Só podem ser presenciais; podem ser instaladas com qualquer número de consorciados presentes; só consorciados adimplentes votam.",
+        "b": "Podem ser presenciais, virtuais ou por outros meios que assegurem participação; podem ser instaladas com qualquer número de presentes; só consorciados adimplentes votam.",
+        "c": "Exigem sempre quórum mínimo de 50% dos consorciados para serem instaladas.",
+        "d": "Consorciados inadimplentes também têm direito a voto, desde que presentes."
+      },
+      "gabarito": "b",
+      "explicacao": "Assembleias podem ser presenciais, virtuais ou outros meios que assegurem participação; podem ser instaladas com qualquer número de presentes; só consorciados adimplentes votam; decisões por maioria simples.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 158,
+      "modulo": "processos",
+      "enunciado": "Segundo a Resolução BCB nº 155/2021, ao aderir ao consórcio, quais custos de participação a administradora deve informar ao cliente, em percentual sobre o valor do crédito?",
+      "opcoes": {
+        "a": "Apenas a taxa de administração.",
+        "b": "Taxa de administração (inclusive se antecipada), fundo de reserva, e seguro (se houver).",
+        "c": "Somente o valor do seguro prestamista, quando contratado.",
+        "d": "Não há exigência de informar custos em percentual, apenas em valor absoluto no contrato final."
+      },
+      "gabarito": "b",
+      "explicacao": "Res. 155/2021: na adesão, a administradora deve informar os custos de participação em percentual sobre o valor do crédito — taxa de administração (inclusive se antecipada), fundo de reserva e seguro (se houver).",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 159,
+      "modulo": "processos",
+      "enunciado": "Em quais situações específicas o consorciado NÃO contemplado pode ser excluído do grupo, segundo a Resolução BCB nº 285/2023 (Art. 32)?",
+      "opcoes": {
+        "a": "Apenas por manifestação de desistência.",
+        "b": "Por manifestação de desistência, por deixar de pagar 3 vencimentos (inadimplência recorrente), ou por estar inadimplente em até 2 vencimentos na data da última AGO do grupo.",
+        "c": "Somente por decisão unilateral da administradora, sem critério objetivo.",
+        "d": "Por qualquer atraso, mesmo de 1 dia em uma única parcela."
+      },
+      "gabarito": "b",
+      "explicacao": "Art. 32: exclusão por manifestação de desistência, inadimplência recorrente (3 vencimentos em atraso), ou inadimplência de até 2 vencimentos na data da última AGO do grupo.",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
+      "vezes_respondida": 0,
+      "vezes_correta": 0,
+      "tipo": "questao_original_ia"
+    },
+    {
+      "id": 160,
+      "modulo": "processos",
+      "enunciado": "Se um consorciado JÁ CONTEMPLADO for excluído do grupo por inadimplência, o que acontece com a contemplação dele, segundo a Resolução BCB nº 285/2023?",
+      "opcoes": {
+        "a": "A contemplação é cancelada e ele perde todo o direito ao crédito.",
+        "b": "A contemplação é mantida, e ele tem direito a crédito parcial correspondente ao percentual já amortizado, deduzidas pendências e multas.",
+        "c": "A contemplação passa automaticamente para o próximo da fila de sorteio.",
+        "d": "A contemplação só é mantida se ele pagar integralmente a dívida em até 24 horas."
+      },
+      "gabarito": "b",
+      "explicacao": "Mesmo excluído, se já estava contemplado, a contemplação é mantida — ele tem direito a crédito parcial (percentual amortizado × valor atualizado do bem, deduzidas pendências e multas — Art. 33).",
+      "fonte_arquivo": "questão original (Claude, baseada em Lei 11.795/08 e Res. BCB 285/2023 e 155/2021)",
       "vezes_respondida": 0,
       "vezes_correta": 0,
       "tipo": "questao_original_ia"

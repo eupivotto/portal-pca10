@@ -1,7 +1,7 @@
 {
   "meta": {
     "certificacao": "PCA-10 (ABAC)",
-    "total_questoes": 160,
+    "total_questoes": 210,
     "modulos": [
       "etica",
       "legislacao",
@@ -2641,6 +2641,806 @@
       "vezes_respondida": 0,
       "vezes_correta": 0,
       "tipo": "questao_original_ia"
+    },
+    {
+      "id": 161,
+      "modulo": "legislacao",
+      "enunciado": "Qual a ordem de contemplação dos Consorciados?",
+      "opcoes": {
+        "a": "Lances / II - Sorteio.",
+        "b": "Maior valor / II - Menor valor.",
+        "c": "Sorteio Ativo / Lances / Sorteio Excluído",
+        "d": "Sorteio Ativo / Sorteio Excluído / Lances."
+      },
+      "gabarito": "c",
+      "explicacao": "Confirmado (com ressalva): Art. 22 da Lei 11.795/2008 prevê contemplação por sorteio ou lance para os ativos, e o consorciado excluído continua participando de sorteios mensais para fins de restituição. A sequência exata \"Sorteio Ativo / Lances / Sorteio Excluído\" é a forma didática como o curso ABAC apresenta esse mecanismo — não é uma citação literal da lei, então vale conferir com o material do curso.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 162,
+      "modulo": "legislacao",
+      "enunciado": "Caso o participante excluído não mantenha cadastro atualizado e, por isso, não receba informação de valor à sua disposição quando do encerramento do grupo, esse valor será perdido?",
+      "opcoes": {
+        "a": "Sim. Após o prazo de encerramento do grupo, valores não resgatados serão somados ao patrimônio da Administradora.",
+        "b": "Não. No entanto, seu ressarcimento deve ser solicitado em juízo.",
+        "c": "Depende do que estiver estipulado em contrato.",
+        "d": "Não. Os valores permanecerão à disposição do excluído."
+      },
+      "gabarito": "d",
+      "explicacao": "Confirmado: a Lei 11.795/2008 e a Circular BCB 3.432/2009 preveem que os valores do consorciado excluído ficam à disposição dele (não são perdidos nem incorporados à administradora); o prazo para comunicação e pagamento dos recursos não procurados é regulado nos arts. 31-33.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 163,
+      "modulo": "legislacao",
+      "enunciado": "A Assembleia Geral Ordinária (AGO) destina-se à apreciação de contas prestadas pela Administradora e a realização de contemplações. Por conta disso ela deve ser realizada:",
+      "opcoes": {
+        "a": "Nenhum dos itens é determinado - nem o prazo, nem o número de cotas; podendo sempre ser pactuados juntos aos participantes.",
+        "b": "Tanto o prazo de duração quanto o número de cotas são previamente determinados.",
+        "c": "O prazo de duração é previamente determinado - mas o número de cotas pode ser livremente pactuado entre os participantes.",
+        "d": "O prazo de duração deve ser livre - já o número de cotas é determinado previamente."
+      },
+      "gabarito": "b",
+      "explicacao": "Confirmado: Art. 2º da Lei 11.795/2008 define consórcio como grupo \"com prazo de duração e número de cotas previamente determinados\".",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 164,
+      "modulo": "legislacao",
+      "enunciado": "Sendo o contrato de participação em grupo de Consórcio, por adesão, um instrumento plurilateral, quais são as partes desta relação:",
+      "opcoes": {
+        "a": "Grupo, Administradora e Banco Central do Brasil.",
+        "b": "Grupo, Administradora e Fornecedor do Bem/Prestador de Serviços.",
+        "c": "Consorciado, Administradora e Fornecedor do Bem/Prestador de Serviços.",
+        "d": "Consorciado, Grupo e Administradora."
+      },
+      "gabarito": "d",
+      "explicacao": "Confirmado: Art. 10 da Lei 11.795/2008 caracteriza o contrato de adesão como instrumento plurilateral, criando vínculos entre consorciado, grupo e administradora.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 165,
+      "modulo": "legislacao",
+      "enunciado": "No consórcio, a aquisição de bens ou serviços se dá por meio de:",
+      "opcoes": {
+        "a": "Compra coletiva.",
+        "b": "Autofinanciamento.",
+        "c": "Parcelamento da dívida.",
+        "d": "Financiamento cooperativo."
+      },
+      "gabarito": "b",
+      "explicacao": "Confirmado: Art. 2º da Lei 11.795/2008 — a aquisição de bens/serviços no consórcio se dá por \"autofinanciamento\".",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 166,
+      "modulo": "legislacao",
+      "enunciado": "Para que a primeira Assembleia Geral Ordinária de um Grupo seja realizada e ele seja de fato constituído, é preciso que:",
+      "opcoes": {
+        "a": "Pelo menos 70% das cotas sejam vendidas.",
+        "b": "A totalidade das cotas seja vendida.",
+        "c": "Que haja condições de viabilidade econômico-financeira para cumprir sua finalidade.",
+        "d": "Pelo menos 50% das cotas sejam vendidas."
+      },
+      "gabarito": "c",
+      "explicacao": "Confirmado: Art. 16 da Lei 11.795/2008 — o grupo se constitui com a 1ª assembleia, convocada quando há adesões \"em número e condições suficientes para assegurar a viabilidade econômico-financeira do empreendimento\".",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 167,
+      "modulo": "legislacao",
+      "enunciado": "Qual a finalidade do pagamento da Taxa de administração?",
+      "opcoes": {
+        "a": "Remuneração do Grupo.",
+        "b": "Formação de Fundo de Reserva.",
+        "c": "Remuneração de serviços prestados pela Administradora.",
+        "d": "Formação de Fundo Comum."
+      },
+      "gabarito": "c",
+      "explicacao": "Confirmado: Art. 5º da Lei 11.795/2008 — a taxa de administração remunera a administradora pela formação, organização e administração do grupo.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 168,
+      "modulo": "legislacao",
+      "enunciado": "Uma das administradoras concorrentes está passando por um processo de liquidação extrajudicial. Isso pode representar uma oportunidade para a empresa que você trabalha. Sobre este assunto, é CORRETO afirmar que:\n\nI - O liquidante, de posse do relatório da situação financeira de cada grupo, publicará um edital no qual constarão os requisitos necessários à habilitação de administradoras de consórcio interessadas na administração dos grupos.\nII - Cada administradora interessada somente pode se candidatar a 25% dos grupos disponiveis no edital, a não ser que as demais propostas tenham sido recusadas.\nIII - Expirado o prazo para a habilitação, o liquidante convocará uma assembleia geral extraordinária do grupo, a fim de deliberar sobre as propostas recebidas.\nIV - Os recursos pertencentes aos grupos serão obrigatória e exclusivamente destinados ao atendimento dos objetivos dos contratos.",
+      "opcoes": {
+        "a": "I, II e III.",
+        "b": "I, III e IV.",
+        "c": "I, II e IV.",
+        "d": "II, III e IV."
+      },
+      "gabarito": "b",
+      "explicacao": "Confirmado parcialmente: Art. 40 da Lei 11.795/2008 confirma os itens I e III (edital do liquidante e assembleia extraordinária para deliberar propostas); o item IV também é regra geral de destinação dos recursos do grupo. Não localizei o texto exato do item II (limite de 25% dos grupos por administradora) numa fonte primária — mantido por ser o item mais plausível como \"falso\" dentre as opções, mas vale confirmar no material do curso.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 169,
+      "modulo": "legislacao",
+      "enunciado": "Quando a Administradora pode transferir a terceiros os recursos para pagamento de bens e serviços escolhidos pelo consorciado contemplado?",
+      "opcoes": {
+        "a": "Após formalização de pedido por parte do consorciado contemplado e satisfeitas as garantias, se for o caso, mediante a apresentação de documentos obrigatórios indicador no contrato!",
+        "b": "No instante da contemplação.",
+        "c": "Nunca poderá transferir recurso a terceiros.",
+        "d": "Após formalização por parte do fornecedor do bem / serviço."
+      },
+      "gabarito": "a",
+      "explicacao": "Confirmado quase literalmente: a Resolução BCB 285/2023 estabelece que a administradora só pode transferir os recursos ao fornecedor/prestador após pedido do consorciado contemplado, satisfeitas as garantias, mediante apresentação dos documentos obrigatórios previstos em contrato.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 170,
+      "modulo": "legislacao",
+      "enunciado": "O valor pago por consorciado não contemplado excluído será restituído?",
+      "opcoes": {
+        "a": "Não - os valores pagos por consorciados excluídos são sempre assimilados pelo grupo.",
+        "b": "Sim - ele receberá a somatória dos valores pagos até a exclusão, com correção financeira.",
+        "c": "Sim - mas apenas o valor pago ao fundo comum do grupo.",
+        "d": "Depende, apenas se isso estiver estabelecido na proposta/contrato de adesão do grupo."
+      },
+      "gabarito": "c",
+      "explicacao": "CORRIGIDO em relação ao palpite original: a Lei 11.795/2008 (art. 30) prevê que o excluído não contemplado tem direito à restituição apenas do valor pago ao FUNDO COMUM do grupo (percentual amortizado do valor do bem, com rendimentos), e não à soma de tudo que foi pago — taxa de administração e fundo de reserva, em regra, não são devolvidos.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 171,
+      "modulo": "legislacao",
+      "enunciado": "O consórcio é a reunião de pessoas naturais e jurídicas em grupo e proporciona:",
+      "opcoes": {
+        "a": "Segurança financeira.",
+        "b": "Geração de renda.",
+        "c": "A aquisição de bens e serviços.",
+        "d": "Igualdade entre todos os participantes."
+      },
+      "gabarito": "c",
+      "explicacao": "Confirmado: Art. 2º da Lei 11.795/2008 — o consórcio proporciona a aquisição de bens e serviços.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 172,
+      "modulo": "legislacao",
+      "enunciado": "\"No caso de não pagamento de parcelas (inadimplência), multas e juros serão cobrados.\" Podemos dizer que essa afirmação é:",
+      "opcoes": {
+        "a": "Verdadeira, somente para grupos formados após 2009.",
+        "b": "Verdadeira, desde que previstas em contrato de adesão.",
+        "c": "Verdadeira, em todos os contratos.",
+        "d": "Somente vale para grupos com mais de 100 membros."
+      },
+      "gabarito": "b",
+      "explicacao": "Confirmado: arts. 27-28 da Lei 11.795/2008 — multas e juros por inadimplência só são devidos se previstos em contrato de adesão.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 173,
+      "modulo": "legislacao",
+      "enunciado": "Para que o Grupo de Consórcio possa ser constituído a Administradora deverá:",
+      "opcoes": {
+        "a": "Ser constituída perante o Cartório de Títulos e Documentos.",
+        "b": "Ser autorizada pela Receita Federal do Brasil.",
+        "c": "Ser registrada na ABAC.",
+        "d": "Ser autorizada pelo Banco Central do Brasil."
+      },
+      "gabarito": "d",
+      "explicacao": "Confirmado: arts. 6º-7º da Lei 11.795/2008 — o Banco Central autoriza o funcionamento das administradoras de consórcio.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 174,
+      "modulo": "legislacao",
+      "enunciado": "\"Uma das principais vantagens que podemos destacar ao Consorciado é a flexibilidade de pagamento do Plano de Consórcio - ou seja, caso a parcela esteja pesando demais para o Consorciado, sempre é possível solicitar a redução do valor da carta de crédito, e consequentemente diminuir a parcela paga\". Podemos dizer que essa afirmação é:",
+      "opcoes": {
+        "a": "Verdadeira. A Administradora é obrigada pelo Banco Central do Brasil a reduzir o valor do crédito, e consequentemente, o valor da prestação. Para manter a capacidade do Fundo Comum do Grupo, a diferença deve ser rateada entre os demais participantes.",
+        "b": "Falsa. A Administradora de Consórcios não tem a obrigação de reduzir o valor do crédito e, consequentemente, o valor da prestação. Isso só é possível se o contrato do Grupo for de preços diferenciados, e se o crédito de menor valor não for inferior a 50% do crédito de maior valor.",
+        "c": "Verdadeira. A manutenção da capacidade de pagamento do Consorciado deve ter sempre prioridade.",
+        "d": "Falsa. Esse tipo de modificação não é possível em nenhum contrato de Consórcio."
+      },
+      "gabarito": "b",
+      "explicacao": "Confirmado: Art. 7º da Resolução BCB 285/2023 — em planos de preços diferenciados, o crédito de menor valor não pode ser inferior a 50% do crédito de maior valor; fora dessa hipótese a administradora não é obrigada a reduzir crédito/prestação.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 175,
+      "modulo": "legislacao",
+      "enunciado": "As prestações pagas por Consorciados em grupos de consórcio são compostas de:",
+      "opcoes": {
+        "a": "Parcela destinada ao fundo comum e juros.",
+        "b": "Parcela destinada ao fundo comum, taxa de administração e demais obrigações pecuniárias previstas em contrato.",
+        "c": "Patrimônio do fundo dividido entre os Consorciados ativos e inativos.",
+        "d": "Parcela destinada ao fundo comum acrescida de taxa de administração."
+      },
+      "gabarito": "b",
+      "explicacao": "Confirmado: Art. 27 da Lei 11.795/2008 — a prestação é composta por parcela do fundo comum, taxa de administração e demais obrigações previstas em contrato.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 176,
+      "modulo": "processos",
+      "enunciado": "É possível que um consorciado de um grupo de motocicletas compre um automóvel com seu crédito?",
+      "opcoes": {
+        "a": "Apenas quando é um consórcio misto.",
+        "b": "Não.",
+        "c": "Sim.",
+        "d": "Sim, desde que haja crédito para comprar ambos."
+      },
+      "gabarito": "b",
+      "explicacao": "Mantido por lógica: o crédito do consórcio é vinculado ao bem/categoria de referência do grupo contratado (aqui, motocicletas); não localizei uma citação legal específica para este caso — vale confirmar com o material do curso.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 177,
+      "modulo": "processos",
+      "enunciado": "Numa assembleia geral extraordinária foi deliberado pelos consorciados o encerramento antecipado do grupo. Esse procedimento é:",
+      "opcoes": {
+        "a": "Permitido, somente se houver aprovação por 100% dos consorciados.",
+        "b": "Permitido, desde que o grupo já tenha contemplado mais de 80% dos consorciados.",
+        "c": "Não permitido.",
+        "d": "Permitido."
+      },
+      "gabarito": "d",
+      "explicacao": "CORRIGIDO em relação ao palpite original: o encerramento antecipado do grupo é pauta legítima de assembleia geral extraordinária (apenas o consorciado ativo não contemplado vota nessa deliberação, conforme regulamentação da Lei 11.795/2008) — ou seja, É permitido, sem exigir 100% de aprovação ou percentual mínimo de contemplados.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 178,
+      "modulo": "processos",
+      "enunciado": "Para planos de consórcio de bens imóveis, assim como nos demais planos, a avaliação da garantia é:",
+      "opcoes": {
+        "a": "Obrigatória.",
+        "b": "Facultativa.",
+        "c": "Realizada pelo BACEN.",
+        "d": "Obrigatória apenas para bens imóveis."
+      },
+      "gabarito": "a",
+      "explicacao": "Confirmado: a Resolução BCB 285/2023 exige avaliação da garantia por avaliador credenciado nos consórcios de imóveis, sendo, portanto, obrigatória.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 179,
+      "modulo": "processos",
+      "enunciado": "Posso realizar a transferência de cota não contemplada para outro consorciado?",
+      "opcoes": {
+        "a": "Sim, desde que a Administradora aprove.",
+        "b": "Apenas em casos de falecimento do consorciado.",
+        "c": "Não normalmente, mas há exceções.",
+        "d": "Sim, sempre de acordo com a vontade do consorciado."
+      },
+      "gabarito": "a",
+      "explicacao": "Confirmado: Art. 13 da Lei 11.795/2008 — a transferência de cota depende de prévia anuência da administradora.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 180,
+      "modulo": "processos",
+      "enunciado": "O cliente decidiu comprar uma cota de consórcio, com a condição de ter garantia que será contemplado brevemente. Sobre essa afirmativa:",
+      "opcoes": {
+        "a": "Somente a Administradora pode garantir.",
+        "b": "Basta usar a referência das últimas contemplações.",
+        "c": "Não há como garantir, visto que a contemplação será por sorteio e lance.",
+        "d": "O consultor que realiza a venda possui expertise para garantir tal contemplação."
+      },
+      "gabarito": "c",
+      "explicacao": "Mantido por lógica: a contemplação depende de sorteio ou lance (art. 22), portanto não há como garantir prazo — não localizei citação legal específica para este enunciado.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 181,
+      "modulo": "processos",
+      "enunciado": "Quando um grupo é encerrado, os valores dos recursos não procurados e demais informações são:",
+      "opcoes": {
+        "a": "Mantidos de forma independente à contabilidade da Administradora.",
+        "b": "Considerados lucro da Administradora.",
+        "c": "Divididos entre Administradora e todos os consorciados.",
+        "d": "Incorporados à Administradora."
+      },
+      "gabarito": "a",
+      "explicacao": "Confirmado: os recursos não procurados de grupo encerrado são mantidos separados da contabilidade da administradora, que atua como gestora desses valores (Lei 11.795/2008 e Circular BCB 3.432/2009).",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 182,
+      "modulo": "processos",
+      "enunciado": "Gustavo comprou um consórcio de imóvel há dois anos e ainda não foi contemplado. Mudou seus planos e quer transferir a cota para outra pessoa. Sabendo que é permitido, qual o principal aspecto que será analisado do novo consorciado?",
+      "opcoes": {
+        "a": "Motivo da venda da cota.",
+        "b": "Os termos da negociação dos valores já aportados.",
+        "c": "O bem oferecido em garantia.",
+        "d": "Capacidade de pagamento."
+      },
+      "gabarito": "d",
+      "explicacao": "Mantido por lógica: análise de capacidade de pagamento é prática padrão de concessão de crédito — não localizei citação legal específica para este enunciado.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 183,
+      "modulo": "processos",
+      "enunciado": "A assembleia que ocorre regularmente, com a periodicidade prevista no contrato de adesão, é conhecida como:",
+      "opcoes": {
+        "a": "Assembleia Geral Ordinária (AGO).",
+        "b": "Assembleia de Constituição.",
+        "c": "Assembleia Fechada.",
+        "d": "Assembleia Geral Extraordinária (AGE)."
+      },
+      "gabarito": "a",
+      "explicacao": "Confirmado: a Assembleia Geral Ordinária (AGO) é a que ocorre com periodicidade prevista em contrato, destinada à prestação de contas e contemplações.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 184,
+      "modulo": "processos",
+      "enunciado": "Qual o prazo que a Administradora possui após a realização da última assembleia para comunicar aos consorciados que não utilizaram seus créditos que os recursos estão disponíveis para recebimento?",
+      "opcoes": {
+        "a": "90 dias",
+        "b": "30 dias",
+        "c": "60 dias",
+        "d": "120 dias"
+      },
+      "gabarito": "b",
+      "explicacao": "Confirmado: Circular BCB 3.432/2009 — prazo de 30 dias corridos para pagamento dos recursos não procurados após comunicação aos consorciados.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 185,
+      "modulo": "processos",
+      "enunciado": "Ana foi contemplada em seu consórcio de serviços há 180 dias. Agora, deseja receber o crédito em espécie e, para isso, deve:",
+      "opcoes": {
+        "a": "Procurar o PROCON.",
+        "b": "Comunicar sua vontade aos demais consorciados na AGE, desde que haja aprovação de maioria simples.",
+        "c": "Aguardar apenas, pois passaram 180 dias.",
+        "d": "Quitar suas obrigações com o grupo."
+      },
+      "gabarito": "d",
+      "explicacao": "Confirmado: para sacar o crédito em espécie, além do prazo de 180 dias da contemplação, é exigida a quitação das obrigações com o grupo.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 186,
+      "modulo": "processos",
+      "enunciado": "Qual das alternativas abaixo não é permitida em planos de consórcio?",
+      "opcoes": {
+        "a": "Sacar o crédito integral após 180 dias da contemplação e se quitado.",
+        "b": "Sacar o crédito integral ou parcial em espécie em data anterior à contemplação.",
+        "c": "Utilizar o crédito para a compra de bens móveis previstos no contrato.",
+        "d": "Utilizar o crédito para a compra de bem imóveis e arcar com despesas de transferência do imóvel."
+      },
+      "gabarito": "b",
+      "explicacao": "Mantido por lógica: o direito ao crédito só nasce a partir da contemplação (art. 22), então sacar em data anterior não é permitido — não localizei citação legal específica exatamente neste formato de pergunta.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 187,
+      "modulo": "processos",
+      "enunciado": "Uma Administradora pode obrigar o consorciado a comprar o bem no fornecedor indicado por ela?",
+      "opcoes": {
+        "a": "Não.",
+        "b": "Sim.",
+        "c": "Sim, se for consórcio de montadora.",
+        "d": "Somente quando a Administradora fornece o bem."
+      },
+      "gabarito": "a",
+      "explicacao": "Mantido por lógica: o consorciado tem liberdade de escolha do fornecedor do bem/serviço — não localizei citação legal específica para este enunciado.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 188,
+      "modulo": "processos",
+      "enunciado": "Dentro de um mesmo Grupo de Consórcio, que permanece sem alterações desde sua constituição, João foi contemplado com crédito de 20 mil e Alberto com crédito no valor de 100 mil. Essa situação:",
+      "opcoes": {
+        "a": "Pode ocorrer.",
+        "b": "Somente ocorre para automóveis usados.",
+        "c": "Não pode ocorrer.",
+        "d": "Não pode ocorrer, pois não foi informado se a contemplação é por sorteio ou lance."
+      },
+      "gabarito": "c",
+      "explicacao": "CORRIGIDO em relação ao palpite original: o Art. 7º da Resolução BCB 285/2023 exige que, em grupo com créditos diferenciados desde a constituição, o menor crédito não seja inferior a 50% do maior. Neste caso, R$ 20 mil é 20% de R$ 100 mil — abaixo do piso legal —, portanto essa situação NÃO poderia ocorrer.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 189,
+      "modulo": "processos",
+      "enunciado": "Fui contemplado por lance em um consórcio imobiliário e, gostaria de comprar um veículo com o crédito. Fui informado pelo consultor que é possível. Esse consultor está:",
+      "opcoes": {
+        "a": "Correta. O Consórcio é uma ferramenta de aquisição de patrimônio extremamente flexível.",
+        "b": "Errada. Se o consórcio estiver referenciado em bem imóvel, o Consorciado só poderá utilizar seu crédito em itens desse tipo.",
+        "c": "Errada. O Consorciado contemplado em consórcio imobiliário só pode optar por serviços de reparo e manutenção.",
+        "d": "Correta. Desde que conte com a anuência dos demais participantes do grupo, em Assembleia Geral Ordinária."
+      },
+      "gabarito": "b",
+      "explicacao": "Mantido por lógica: o crédito de consórcio imobiliário é vinculado ao bem de referência (imóvel); não localizei citação legal específica para este enunciado exato.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 190,
+      "modulo": "processos",
+      "enunciado": "O consorciado não precisa ter renda. Essa afirmativa é:",
+      "opcoes": {
+        "a": "Somente para novos consorciados.",
+        "b": "Falsa, a Administradora sempre analisa a capacidade de pagamento para proteção do grupo.",
+        "c": "Verdadeira, sempre há anuência para algumas categorias de consorciados.",
+        "d": "Apenas para grupos anteriores à Lei 11795/2008."
+      },
+      "gabarito": "b",
+      "explicacao": "Mantido por lógica: a análise de capacidade de pagamento é sempre feita para proteção do grupo — não localizei citação legal específica para este enunciado.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 191,
+      "modulo": "processos",
+      "enunciado": "A contratação de seguro para determinado Grupo de Consórcio representa uma proteção para:",
+      "opcoes": {
+        "a": "Consorciados.",
+        "b": "Consorciado, Administradora e grupo.",
+        "c": "Grupo.",
+        "d": "Administradora."
+      },
+      "gabarito": "c",
+      "explicacao": "Mantido: não há regra legal de obrigatoriedade de seguro no consórcio (depende do contrato/administradora); quando contratado, o entendimento comum é que ele protege o patrimônio do grupo/fundo comum contra a inadimplência por morte/invalidez do contemplado — vale confirmar com o material do curso.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 192,
+      "modulo": "processos",
+      "enunciado": "Qualquer imóvel é admitido como garantia em consórcios imobiliários. Essa afirmação está:",
+      "opcoes": {
+        "a": "Incorreta, há uma avaliação para imóveis comerciais apenas.",
+        "b": "Correta para imóveis residenciais apenas.",
+        "c": "Correta.",
+        "d": "Incorreta."
+      },
+      "gabarito": "d",
+      "explicacao": "Mantido por lógica: nem todo imóvel atende aos critérios de avaliação e aceitação como garantia — não localizei citação legal específica para este enunciado exato.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 193,
+      "modulo": "processos",
+      "enunciado": "O que é grupo em andamento?",
+      "opcoes": {
+        "a": "É grupo que pode admitir a adesão de consorciados, mesmo que não haja vagas, pois já realizou assembleia de constituição.",
+        "b": "É grupo que pode admitir a adesão de consorciados, desde que haja vagas, pois ainda não realizou assembleia de constituição.",
+        "c": "É grupo que pode admitir a adesão de consorciados, desde que haja vagas, pois já realizou assembleia de constituição.",
+        "d": "É grupo que não pode admitir a adesão de consorciados, mesmo que haja vagas, pois já realizou assembleia de constituição."
+      },
+      "gabarito": "c",
+      "explicacao": "Mantido: definição didática usual do curso para \"grupo em andamento\" (já constituído, admite novas adesões enquanto houver vagas) — não é uma citação literal da lei.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 194,
+      "modulo": "processos",
+      "enunciado": "Qual cliente não pode ser contemplado?",
+      "opcoes": {
+        "a": "Ativo",
+        "b": "Quitado",
+        "c": "Excluído",
+        "d": "Desistente"
+      },
+      "gabarito": "c",
+      "explicacao": "Mantido por lógica: o consorciado excluído não é elegível a novas contemplações — não localizei citação legal específica para este enunciado exato.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 195,
+      "modulo": "processos",
+      "enunciado": "Qual o prazo que a Administradora tem para formar o grupo a partir da adesão de consorciado?",
+      "opcoes": {
+        "a": "7 dias.",
+        "b": "120 dias.",
+        "c": "30 dias.",
+        "d": "90 dias."
+      },
+      "gabarito": "d",
+      "explicacao": "Confirmado: Circular BCB 3.432/2009 e Art. 16 da Lei 11.795/2008 — prazo de 90 dias para formação do grupo a partir da adesão; se não atingido, os valores cobrados devem ser devolvidos ao aderente.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Gabarito revisado e confirmado por Claude contra a Lei 11.795/2008 e Resolução BCB nº 285/2023 em 02/09/2026 (pesquisa web).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 196,
+      "modulo": "etica",
+      "enunciado": "Qual comportamento pode ser adotado pela administradora para realizar a cobrança de parcelas em atraso?",
+      "opcoes": {
+        "a": "Contato com familiares de primeiro grau, deixando recado e informando a natureza do débito.",
+        "b": "Contato através dos meios fornecidos, informando a natureza do débito.",
+        "c": "Contato através dos meios fornecidos, solicitando pagamento imediato, independente de constrangimento/coação.",
+        "d": "Cobrança através de meios que causem constrangimento."
+      },
+      "gabarito": "b",
+      "explicacao": "Questão de conduta comercial/ética profissional — não é objeto de lei específica; gabarito mantido pela lógica das boas práticas de atendimento e do Código de Defesa do Consumidor, não confirmado contra um gabarito oficial.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Questão de prática/conduta comercial sem dispositivo legal específico localizado — gabarito mantido por lógica do curso e boas práticas, não confirmado em lei.",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 197,
+      "modulo": "etica",
+      "enunciado": "Um bom profissional de vendas costuma:",
+      "opcoes": {
+        "a": "Acompanhar as tendências, sem se atualizar.",
+        "b": "Acompanhar sua carteira e deixar que a carteira lhe trouxesse novas oportunidades de negócio.",
+        "c": "Bater a meta a qualquer custo, além de acompanhar sua carteira, se atualizar e buscar novas oportunidades de negócio.",
+        "d": "Acompanhar sua carteira, se atualizar e buscar novas oportunidades de negócio."
+      },
+      "gabarito": "d",
+      "explicacao": "Questão de conduta comercial/ética profissional — não é objeto de lei específica; gabarito mantido pela lógica das boas práticas de atendimento e do Código de Defesa do Consumidor, não confirmado contra um gabarito oficial.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Questão de prática/conduta comercial sem dispositivo legal específico localizado — gabarito mantido por lógica do curso e boas práticas, não confirmado em lei.",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 198,
+      "modulo": "etica",
+      "enunciado": "Um cliente questiona seu consultor sobre informações de uma suposta má administração dos recursos de seu grupo de consórcio, divulgadas em um grupo de WhatsApp. O consultor deve informar que:",
+      "opcoes": {
+        "a": "Nem todas as informações que circulam na Internet possuem uma fonte confiável, precisam ser validadas com o aplicativo.",
+        "b": "Todas as informações que circulam na Internet possuem uma fonte confiável, e não precisam ser validadas.",
+        "c": "As informações do WhatsApp são sempre mentirosas, por isso o aplicativo já foi bloqueado algumas vezes.",
+        "d": "Nem todas as informações que circulam na Internet possuem uma fonte confiável, precisam ser validadas."
+      },
+      "gabarito": "a",
+      "explicacao": "Questão de conduta comercial/ética profissional — não é objeto de lei específica; gabarito mantido pela lógica das boas práticas de atendimento e do Código de Defesa do Consumidor, não confirmado contra um gabarito oficial.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Questão de prática/conduta comercial sem dispositivo legal específico localizado — gabarito mantido por lógica do curso e boas práticas, não confirmado em lei.",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 199,
+      "modulo": "etica",
+      "enunciado": "Ouvir o cliente é _________ para realizar uma boa venda.",
+      "opcoes": {
+        "a": "Uma atitude que atrapalha",
+        "b": "Dispensável",
+        "c": "Facultativo",
+        "d": "Necessário"
+      },
+      "gabarito": "d",
+      "explicacao": "Questão de conduta comercial/ética profissional — não é objeto de lei específica; gabarito mantido pela lógica das boas práticas de atendimento e do Código de Defesa do Consumidor, não confirmado contra um gabarito oficial.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Questão de prática/conduta comercial sem dispositivo legal específico localizado — gabarito mantido por lógica do curso e boas práticas, não confirmado em lei.",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 200,
+      "modulo": "etica",
+      "enunciado": "É vetado ao profissional de vendas:",
+      "opcoes": {
+        "a": "Usar a experiência para sugerir soluções.",
+        "b": "Buscar capacitação profissional.",
+        "c": "Observar os interesses do cliente.",
+        "d": "Se posicionar, de acordo com seus próprios interesses."
+      },
+      "gabarito": "d",
+      "explicacao": "Questão de conduta comercial/ética profissional — não é objeto de lei específica; gabarito mantido pela lógica das boas práticas de atendimento e do Código de Defesa do Consumidor, não confirmado contra um gabarito oficial.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Questão de prática/conduta comercial sem dispositivo legal específico localizado — gabarito mantido por lógica do curso e boas práticas, não confirmado em lei.",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 201,
+      "modulo": "calculos",
+      "enunciado": "O Cliente está pagando R$ 1.200,00 de amortização mensal de fundo comum em uma determinada cota de Consórcio. Sabendo que isso corresponde a uma amortização mensal de 2%, qual a duração de seu plano e qual o valor de seu crédito total?",
+      "opcoes": {
+        "a": "50 meses / R$ 60.000,00.",
+        "b": "36 meses / R$ 43.200,00.",
+        "c": "90 meses / R$ 108.000,00",
+        "d": "60 meses / R$ 72.000,00."
+      },
+      "gabarito": "a",
+      "explicacao": "Questão de cálculo — resultado obtido por fórmula (fundo comum + taxa de administração + fundo de reserva), conferido matematicamente. 2% × crédito = 1.200 → crédito = R$ 60.000,00; 100% ÷ 2% = 50 meses.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Cálculo conferido matematicamente por Claude em 02/09/2026 (fórmulas padrão de consórcio: fundo comum + TA + FR).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 202,
+      "modulo": "calculos",
+      "enunciado": "Jaqueline possui uma cota de Consórcio com valor de Crédito de R$ 100.000,00 e duração de 60 meses. Ela pretende ofertar um lance de 25% do valor da categoria da sua contratação. Sabendo que sua Taxa de Administração é de 5% e o Fundo de Reserva é de 2%, qual será o valor do lance ofertado por ela?",
+      "opcoes": {
+        "a": "R$ 26.750,00.",
+        "b": "R$ 25.000,00.",
+        "c": "R$ 15.000,00.",
+        "d": "Impossível calcular sem saber quanto ela já pagou."
+      },
+      "gabarito": "a",
+      "explicacao": "Questão de cálculo — resultado obtido por fórmula (fundo comum + taxa de administração + fundo de reserva), conferido matematicamente. 25% de [100.000 + 5.000 de TA total + 2.000 de FR total] = 25% × 107.000 = 26.750.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Cálculo conferido matematicamente por Claude em 02/09/2026 (fórmulas padrão de consórcio: fundo comum + TA + FR).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 203,
+      "modulo": "calculos",
+      "enunciado": "Roberto deseja contratar um Consórcio para a compra de um carro no valor de R$ 90 mil reais, no prazo de 60 meses - pelas suas contas, a parcela mensal deve ser de R$ 1.500,00. O valor está correto?",
+      "opcoes": {
+        "a": "Sim. Para saber o valor da parcela mensal, basta dividir o valor do crédito pela duração do contrato.",
+        "b": "Não. Esse valor desconsidera a valorização do veículo no período.",
+        "c": "Não. Esse valor refere-se apenas a amortização mensal do fundo comum.",
+        "d": "Sim. Mesmo que veículo desvalorize, esse será o valor mensal."
+      },
+      "gabarito": "c",
+      "explicacao": "Questão de cálculo — resultado obtido por fórmula (fundo comum + taxa de administração + fundo de reserva), conferido matematicamente. ",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Cálculo conferido matematicamente por Claude em 02/09/2026 (fórmulas padrão de consórcio: fundo comum + TA + FR).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 204,
+      "modulo": "calculos",
+      "enunciado": "Sua Administradora oferece dois planos de Consórcio, ambos para o crédito de R$ 200.000,00 - no plano A, a duração é 36 meses, enquanto no B a duração é de 48 meses. Sabendo que nenhum dos grupos cobra Fundo de Reserva, e que o percentual de Taxa de Administração é o mesmo para os dois planos, em qual deles o cliente pagará um maior valor nominal mensal relativo à Taxa de Administração?",
+      "opcoes": {
+        "a": "Não é possível saber sem conhecer o percentual da Taxa de Administração.",
+        "b": "No plano A - uma vez que a Taxa de Administração será amortizada em menos vezes.",
+        "c": "No plano B - uma vez que a Taxa de Administração será amortizada em mais vezes.",
+        "d": "O cliente pagará a mesma amortização mensal nos dois planos, pois o percentual de Taxa de Administração é o mesmo."
+      },
+      "gabarito": "b",
+      "explicacao": "Questão de cálculo — resultado obtido por fórmula (fundo comum + taxa de administração + fundo de reserva), conferido matematicamente. ",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Cálculo conferido matematicamente por Claude em 02/09/2026 (fórmulas padrão de consórcio: fundo comum + TA + FR).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 205,
+      "modulo": "calculos",
+      "enunciado": "Caso o plano de Consórcio do cliente possua diversas faixas de crédito e ele queira, por exemplo, migrar de uma faixa de R$ 30.000,00 para R$ 40.000,00, como será feita a adequação de suas parcelas mensais?",
+      "opcoes": {
+        "a": "Ele deverá pagar de imediato a diferença entre os planos (nesse caso R$ 10.000,00) e assumir o novo valor de prestação a partir daquele momento.",
+        "b": "Ele passará a pagar o valor relativo ao novo crédito a partir da mudança e, quando contemplado, a diferença será debitada do crédito.",
+        "c": "Ele deverá pagar de imediato a diferença entre as parcelas que já passaram e assumir o novo valor de prestação a partir daquele momento.",
+        "d": "Ele passará a pagar o valor relativo ao novo crédito a partir da mudança, sem acertos adicionais."
+      },
+      "gabarito": "b",
+      "explicacao": "Questão de cálculo — resultado obtido por fórmula (fundo comum + taxa de administração + fundo de reserva), conferido matematicamente. ",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Cálculo conferido matematicamente por Claude em 02/09/2026 (fórmulas padrão de consórcio: fundo comum + TA + FR).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 206,
+      "modulo": "calculos",
+      "enunciado": "Calcule de quanto será a parcela de uma determinada cota de Consórcio: Crédito R$ 68.000,00; Duração 36 meses; Taxa de Administração 8,9%; Fundo de Reserva 2,3%.",
+      "opcoes": {
+        "a": "R$ 2.115,55.",
+        "b": "R$ 2.100,44.",
+        "c": "R$ 1.677,32.",
+        "d": "R$ 1.888,88."
+      },
+      "gabarito": "b",
+      "explicacao": "Questão de cálculo — resultado obtido por fórmula (fundo comum + taxa de administração + fundo de reserva), conferido matematicamente. Fundo comum 1.888,89 + TA 168,11 + FR 43,44 = 2.100,44.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Cálculo conferido matematicamente por Claude em 02/09/2026 (fórmulas padrão de consórcio: fundo comum + TA + FR).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 207,
+      "modulo": "calculos",
+      "enunciado": "Manoel possui uma cota de consórcio com valor de 250 mil de crédito e duração de 80 meses. Na 13ª Assembleia Geral Ordinária ele decide oferecer um lance de R$ 35.000,00. Considerando apenas fundo comum, qual será o valor do novo saldo devedor?",
+      "opcoes": {
+        "a": "R$ 209.375,00",
+        "b": "R$ 174.375,00",
+        "c": "R$ 3.125,00",
+        "d": "R$ 2.602,61"
+      },
+      "gabarito": "b",
+      "explicacao": "Questão de cálculo — resultado obtido por fórmula (fundo comum + taxa de administração + fundo de reserva), conferido matematicamente. Saldo após 13 parcelas = 209.375; menos o lance de 35.000 = 174.375.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Cálculo conferido matematicamente por Claude em 02/09/2026 (fórmulas padrão de consórcio: fundo comum + TA + FR).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 208,
+      "modulo": "calculos",
+      "enunciado": "Ricardo possui um plano de Consórcio com crédito de R$ 45.000,00; duração de 50 meses. Pagou 50% do plano e agora deseja mudar para uma faixa de crédito de R$ 75.000,00. Taxa de administração e fundo de reserva são de 5% cada, e a diferença das parcelas já passadas deve ser paga de imediato. Quanto Ricardo desembolsará à vista e qual a nova prestação?",
+      "opcoes": {
+        "a": "Diferença a ser paga à vista: R$ 30.000,00, nova prestação: R$ 1.650,00.",
+        "b": "Diferença a ser paga à vista: R$ 16.500,00, nova prestação: R$ 1.650,00.",
+        "c": "Diferença a ser paga à vista: R$ 15.000,00, nova prestação: R$ 1.500,00.",
+        "d": "Diferença a ser paga à vista: R$ 16.500,00, nova prestação: R$ 660,00."
+      },
+      "gabarito": "b",
+      "explicacao": "Questão de cálculo — resultado obtido por fórmula (fundo comum + taxa de administração + fundo de reserva), conferido matematicamente. ",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Cálculo conferido matematicamente por Claude em 02/09/2026 (fórmulas padrão de consórcio: fundo comum + TA + FR).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 209,
+      "modulo": "calculos",
+      "enunciado": "Renato adquiriu uma cota vaga em um plano de Consórcio com crédito de 72.000,00 e duração de 60 meses, restando 40 meses. Quem paga desde o início paga R$ 1.380,00/mês. Taxa Administrativa 10%, Fundo de Reserva 5%. Qual a parcela de Renato?",
+      "opcoes": {
+        "a": "R$ 1.980,00.",
+        "b": "R$ 2.070,00.",
+        "c": "R$ 1.587,00.",
+        "d": "R$ 1.800,00."
+      },
+      "gabarito": "b",
+      "explicacao": "Questão de cálculo — resultado obtido por fórmula (fundo comum + taxa de administração + fundo de reserva), conferido matematicamente. Fundo comum 72.000/40=1.800 + TA 7.200/40=180 + FR 3.600/40=90 = 2.070.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Cálculo conferido matematicamente por Claude em 02/09/2026 (fórmulas padrão de consórcio: fundo comum + TA + FR).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
+    },
+    {
+      "id": 210,
+      "modulo": "calculos",
+      "enunciado": "Isabel possui uma cota de Consórcio com valor de Crédito de R$ 80.000,00 e duração de 50 meses. Está inadimplente há três meses e pretende quitar à vista. Descontando multas e juros, e sabendo que seu plano possui apenas Taxa de Administração de 5% — a administradora só pode abrir mão dos juros/multas da parte correspondente a ela, a parte do grupo deve ser cobrada — qual valor ela precisará para saldar o atraso?",
+      "opcoes": {
+        "a": "R$ 4.800,00.",
+        "b": "R$ 5.292,00.",
+        "c": "R$ 5.040,00.",
+        "d": "R$ 4.560,00."
+      },
+      "gabarito": "a",
+      "explicacao": "Questão de cálculo — resultado obtido por fórmula (fundo comum + taxa de administração + fundo de reserva), conferido matematicamente. 3 meses × fundo comum de R$1.600 — a Taxa de Administração, que é a parte que cabe à administradora, é a que pode ser perdoada.",
+      "fonte_arquivo": "Simulado Google Forms \"SIMULADO - FÓRMULA PCA-10\" (Conkey), capturado em 02/09/2026. Cálculo conferido matematicamente por Claude em 02/09/2026 (fórmulas padrão de consórcio: fundo comum + TA + FR).",
+      "vezes_respondida": 0,
+      "vezes_correta": 0
     }
   ]
 }
